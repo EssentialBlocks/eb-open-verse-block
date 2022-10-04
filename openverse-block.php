@@ -23,13 +23,13 @@
 require_once __DIR__ . '/includes/font-loader.php';
 require_once __DIR__ . '/includes/post-meta.php';
 require_once __DIR__ . '/includes/helpers.php';
-require_once __DIR__ . '/lib/style-handler/style-handler.php';
+require_once __DIR__ . '/lib/style-handler-inline/style-handler.php';
 require_once __DIR__ . '/includes/api-class.php';
 require_once __DIR__ . '/includes/class-openverse-ajax.php';
 
 function create_block_eb_openverse_block_init()
 {
-	define('EB_OPENVERSE_BLOCK_VERSION', "1.1.2");
+	define('EB_OPENVERSE_BLOCK_VERSION', "1.0.0");
 	define('EB_OPENVERSE_BLOCK_ADMIN_URL', plugin_dir_url(__FILE__));
 	define('EB_OPENVERSE_BLOCK_ADMIN_PATH', dirname(__FILE__));
 
