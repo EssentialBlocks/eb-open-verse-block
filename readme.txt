@@ -16,7 +16,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 
 **STUNNING FEATURES:**
 
-- No configuration needed
+- Minimal configuration
 - Direct download images from Openverse
 - Easy search from 600+ million creative works
 - Store images straight into the media library
