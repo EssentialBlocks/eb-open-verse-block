@@ -1,0 +1,9 @@
+{
+	"apiVersion": "2",
+	"name": "eb-openverse-block/eb-openverse-block",
+	"title": "Openverse Block By Essential Blocks",
+	"category": "widgets",
+	"description": "Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website",
+	"textdomain": "eb-openverse-block",
+	"editorScript": "file:./dist/index.js"
+}
