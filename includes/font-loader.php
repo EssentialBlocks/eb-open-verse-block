@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Openverse_Font_Loader
+class EB_Openverse_Font_Loader
 {
 
     private static $instance;
@@ -91,4 +91,4 @@ class Openverse_Font_Loader
         }
     }
 }
-Openverse_Font_Loader::register();
+EB_Openverse_Font_Loader::register();

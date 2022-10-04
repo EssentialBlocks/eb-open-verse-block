@@ -15,34 +15,34 @@ export const ATTRIBUTION_TYPOGRAPHY = "captionTypo";
 export const ATTRIBUTION_WIDTH = "captionWidth";
 
 export const VERTICAL_ALIGN = [
-	{ label: __("Top", "essential-blocks"), value: "top" },
-	{ label: __("Middle", "essential-blocks"), value: "middle" },
-	{ label: __("Bottom", "essential-blocks"), value: "bottom" },
+	{ label: __("Top", "eb-openverse-block"), value: "top" },
+	{ label: __("Middle", "eb-openverse-block"), value: "middle" },
+	{ label: __("Bottom", "eb-openverse-block"), value: "bottom" },
 ];
 
 export const VERTICAL_ALIGN_CAP_2 = [
-	{ label: __("Top", "essential-blocks"), value: "top" },
-	{ label: __("Bottom", "essential-blocks"), value: "bottom" },
+	{ label: __("Top", "eb-openverse-block"), value: "top" },
+	{ label: __("Bottom", "eb-openverse-block"), value: "bottom" },
 ];
 
 export const HORIZONTAL_ALIGN = [
-	{ label: __("Left", "essential-blocks"), value: "left" },
-	{ label: __("Center", "essential-blocks"), value: "center" },
-	{ label: __("Right", "essential-blocks"), value: "right" },
+	{ label: __("Left", "eb-openverse-block"), value: "left" },
+	{ label: __("Center", "eb-openverse-block"), value: "center" },
+	{ label: __("Right", "eb-openverse-block"), value: "right" },
 ];
 
 export const TEXT_ALIGN = [
-	{ label: __("Left", "essential-blocks"), value: "left" },
-	{ label: __("Center", "essential-blocks"), value: "center" },
-	{ label: __("Right", "essential-blocks"), value: "right" },
+	{ label: __("Left", "eb-openverse-block"), value: "left" },
+	{ label: __("Center", "eb-openverse-block"), value: "center" },
+	{ label: __("Right", "eb-openverse-block"), value: "right" },
 ];
 
 export const HOVER_EFFECT = [
-	{ label: __("No Effect", "essential-blocks"), value: "no-effect" },
-	{ label: __("Zoom In", "essential-blocks"), value: "zoom-in" },
-	{ label: __("Zoom Out", "essential-blocks"), value: "zoom-out" },
-	{ label: __("Slide", "essential-blocks"), value: "slide" },
-	{ label: __("Blur", "essential-blocks"), value: "blur" },
+	{ label: __("No Effect", "eb-openverse-block"), value: "no-effect" },
+	{ label: __("Zoom In", "eb-openverse-block"), value: "zoom-in" },
+	{ label: __("Zoom Out", "eb-openverse-block"), value: "zoom-out" },
+	{ label: __("Slide", "eb-openverse-block"), value: "slide" },
+	{ label: __("Blur", "eb-openverse-block"), value: "blur" },
 ];
 
 export const UNIT_TYPES = [
@@ -57,61 +57,61 @@ export const SIZE_UNIT_TYPES = [
 ];
 
 export const STYLES = [
-	{ label: __("Rounded", "essential-blocks"), value: "rounded" },
-	{ label: __("Square", "essential-blocks"), value: "square" },
-	{ label: __("Circle", "essential-blocks"), value: "circle" },
-	{ label: __("Octagon", "essential-blocks"), value: "octagon" },
-	{ label: __("Rhombus", "essential-blocks"), value: "rhombus" },
-	{ label: __("Triangle", "essential-blocks"), value: "triangle" },
+	{ label: __("Rounded", "eb-openverse-block"), value: "rounded" },
+	{ label: __("Square", "eb-openverse-block"), value: "square" },
+	{ label: __("Circle", "eb-openverse-block"), value: "circle" },
+	{ label: __("Octagon", "eb-openverse-block"), value: "octagon" },
+	{ label: __("Rhombus", "eb-openverse-block"), value: "rhombus" },
+	{ label: __("Triangle", "eb-openverse-block"), value: "triangle" },
 ];
 
 export const ATTRIBUTION_STYLES = [
-	{ label: __("Style 1", "essential-blocks"), value: "attribution-style-1" },
-	{ label: __("Style 2", "essential-blocks"), value: "attribution-style-2" },
+	{ label: __("Style 1", "eb-openverse-block"), value: "attribution-style-1" },
+	{ label: __("Style 2", "eb-openverse-block"), value: "attribution-style-2" },
 ];
 
 export const FILTER_LICENSES = [
-	{ label: __("Public Domain Mark", "essential-blocks"), value: "pdm" },
-	{ label: __("CC0", "essential-blocks"), value: "cc0" },
-	{ label: __("CC BY", "essential-blocks"), value: "by" },
-	{ label: __("CC BY-SA", "essential-blocks"), value: "by-sa" },
-	{ label: __("CC BY-ND", "essential-blocks"), value: "by-nd" },
-	{ label: __("CC BY-NC", "essential-blocks"), value: "by-nc" },
-	{ label: __("CC BY-NC-SA", "essential-blocks"), value: "by-nc-sa" },
-	{ label: __("CC BY-NC-ND", "essential-blocks"), value: "by-nc-nd" },
+	{ label: __("Public Domain Mark", "eb-openverse-block"), value: "pdm" },
+	{ label: __("CC0", "eb-openverse-block"), value: "cc0" },
+	{ label: __("CC BY", "eb-openverse-block"), value: "by" },
+	{ label: __("CC BY-SA", "eb-openverse-block"), value: "by-sa" },
+	{ label: __("CC BY-ND", "eb-openverse-block"), value: "by-nd" },
+	{ label: __("CC BY-NC", "eb-openverse-block"), value: "by-nc" },
+	{ label: __("CC BY-NC-SA", "eb-openverse-block"), value: "by-nc-sa" },
+	{ label: __("CC BY-NC-ND", "eb-openverse-block"), value: "by-nc-nd" },
 ];
 export const FILTER_LICENSE_TYPE = [
 	{
-		label: __("Use commercially", "essential-blocks"),
+		label: __("Use commercially", "eb-openverse-block"),
 		value: "commercial",
 	},
 	{
-		label: __("Modify or adapt", "essential-blocks"),
+		label: __("Modify or adapt", "eb-openverse-block"),
 		value: "modification",
 	},
 ];
 
 export const FILTER_CATEGORY = [
-	{ label: __("Photographs", "essential-blocks"), value: "photograph" },
-	{ label: __("Illustrations", "essential-blocks"), value: "illustration" },
+	{ label: __("Photographs", "eb-openverse-block"), value: "photograph" },
+	{ label: __("Illustrations", "eb-openverse-block"), value: "illustration" },
 	{
-		label: __("Digitized Artworks", "essential-blocks"),
+		label: __("Digitized Artworks", "eb-openverse-block"),
 		value: "digitized_artwork",
 	},
 ];
 export const FILTER_SIZE = [
-	{ label: __("Small", "essential-blocks"), value: "small" },
-	{ label: __("Medium", "essential-blocks"), value: "medium" },
-	{ label: __("Large", "essential-blocks"), value: "large" },
+	{ label: __("Small", "eb-openverse-block"), value: "small" },
+	{ label: __("Medium", "eb-openverse-block"), value: "medium" },
+	{ label: __("Large", "eb-openverse-block"), value: "large" },
 ];
 export const FILTER_EXTENSION = [
-	{ label: __("JPEG", "essential-blocks"), value: "jpg" },
-	{ label: __("SVG", "essential-blocks"), value: "svg" },
-	{ label: __("PNG", "essential-blocks"), value: "png" },
-	{ label: __("GIF", "essential-blocks"), value: "gif" },
+	{ label: __("JPEG", "eb-openverse-block"), value: "jpg" },
+	{ label: __("SVG", "eb-openverse-block"), value: "svg" },
+	{ label: __("PNG", "eb-openverse-block"), value: "png" },
+	{ label: __("GIF", "eb-openverse-block"), value: "gif" },
 ];
 export const FILTER_ASPECT_RATIO = [
-	{ label: __("Tall", "essential-blocks"), value: "tall" },
-	{ label: __("Wide", "essential-blocks"), value: "wide" },
-	{ label: __("Square", "essential-blocks"), value: "square" },
+	{ label: __("Tall", "eb-openverse-block"), value: "tall" },
+	{ label: __("Wide", "eb-openverse-block"), value: "wide" },
+	{ label: __("Square", "eb-openverse-block"), value: "square" },
 ];

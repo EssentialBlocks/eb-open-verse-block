@@ -292,56 +292,56 @@ const ATTRIBUTION_PADDING = "captionPadding";
 const ATTRIBUTION_TYPOGRAPHY = "captionTypo";
 const ATTRIBUTION_WIDTH = "captionWidth";
 const VERTICAL_ALIGN = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Top", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Top", "eb-openverse-block"),
   value: "top"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Middle", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Middle", "eb-openverse-block"),
   value: "middle"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Bottom", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Bottom", "eb-openverse-block"),
   value: "bottom"
 }];
 const VERTICAL_ALIGN_CAP_2 = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Top", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Top", "eb-openverse-block"),
   value: "top"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Bottom", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Bottom", "eb-openverse-block"),
   value: "bottom"
 }];
 const HORIZONTAL_ALIGN = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Left", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Left", "eb-openverse-block"),
   value: "left"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "eb-openverse-block"),
   value: "center"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Right", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Right", "eb-openverse-block"),
   value: "right"
 }];
 const TEXT_ALIGN = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Left", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Left", "eb-openverse-block"),
   value: "left"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "eb-openverse-block"),
   value: "center"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Right", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Right", "eb-openverse-block"),
   value: "right"
 }];
 const HOVER_EFFECT = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No Effect", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No Effect", "eb-openverse-block"),
   value: "no-effect"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Zoom In", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Zoom In", "eb-openverse-block"),
   value: "zoom-in"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Zoom Out", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Zoom Out", "eb-openverse-block"),
   value: "zoom-out"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Slide", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Slide", "eb-openverse-block"),
   value: "slide"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Blur", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Blur", "eb-openverse-block"),
   value: "blur"
 }];
 const UNIT_TYPES = [{
@@ -362,104 +362,104 @@ const SIZE_UNIT_TYPES = [{
   value: "em"
 }];
 const STYLES = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Rounded", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Rounded", "eb-openverse-block"),
   value: "rounded"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Square", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Square", "eb-openverse-block"),
   value: "square"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Circle", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Circle", "eb-openverse-block"),
   value: "circle"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Octagon", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Octagon", "eb-openverse-block"),
   value: "octagon"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Rhombus", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Rhombus", "eb-openverse-block"),
   value: "rhombus"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Triangle", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Triangle", "eb-openverse-block"),
   value: "triangle"
 }];
 const ATTRIBUTION_STYLES = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Style 1", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Style 1", "eb-openverse-block"),
   value: "attribution-style-1"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Style 2", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Style 2", "eb-openverse-block"),
   value: "attribution-style-2"
 }];
 const FILTER_LICENSES = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Public Domain Mark", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Public Domain Mark", "eb-openverse-block"),
   value: "pdm"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC0", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC0", "eb-openverse-block"),
   value: "cc0"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY", "eb-openverse-block"),
   value: "by"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-SA", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-SA", "eb-openverse-block"),
   value: "by-sa"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-ND", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-ND", "eb-openverse-block"),
   value: "by-nd"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC", "eb-openverse-block"),
   value: "by-nc"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC-SA", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC-SA", "eb-openverse-block"),
   value: "by-nc-sa"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC-ND", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("CC BY-NC-ND", "eb-openverse-block"),
   value: "by-nc-nd"
 }];
 const FILTER_LICENSE_TYPE = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Use commercially", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Use commercially", "eb-openverse-block"),
   value: "commercial"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Modify or adapt", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Modify or adapt", "eb-openverse-block"),
   value: "modification"
 }];
 const FILTER_CATEGORY = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Photographs", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Photographs", "eb-openverse-block"),
   value: "photograph"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Illustrations", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Illustrations", "eb-openverse-block"),
   value: "illustration"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Digitized Artworks", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Digitized Artworks", "eb-openverse-block"),
   value: "digitized_artwork"
 }];
 const FILTER_SIZE = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Small", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Small", "eb-openverse-block"),
   value: "small"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Medium", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Medium", "eb-openverse-block"),
   value: "medium"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Large", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Large", "eb-openverse-block"),
   value: "large"
 }];
 const FILTER_EXTENSION = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("JPEG", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("JPEG", "eb-openverse-block"),
   value: "jpg"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("SVG", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("SVG", "eb-openverse-block"),
   value: "svg"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("PNG", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("PNG", "eb-openverse-block"),
   value: "png"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("GIF", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("GIF", "eb-openverse-block"),
   value: "gif"
 }];
 const FILTER_ASPECT_RATIO = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tall", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Tall", "eb-openverse-block"),
   value: "tall"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wide", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wide", "eb-openverse-block"),
   value: "wide"
 }, {
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Square", "essential-blocks"),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Square", "eb-openverse-block"),
   value: "square"
 }];
 
@@ -755,7 +755,7 @@ function Edit(props) {
     controls: ["left", "center", "right"]
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_style__WEBPACK_IMPORTED_MODULE_8__["default"], props), imageurl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Toolbar, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToolbarButton, {
     className: "components-toolbar__control",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Replace Image", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Replace Image", "eb-openverse-block"),
     icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_14__["default"],
     onClick: () => setOpenverseModal(true)
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -773,7 +773,7 @@ function Edit(props) {
     className: `eb-openverse-form-wrapper ${loadingApi ? "loading-circle" : ""}`
   }, showForm && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "openverse-placheholderbox__description"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Provide your Email ID & unique project Name to get access to Openverse  using API, these are required field", "essential-blocks"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Provide your Email ID & unique project Name to get access to Openverse  using API, these are required field", "eb-openverse-block"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     style: {
       color: "#ff0000"
     }
@@ -791,7 +791,7 @@ function Edit(props) {
     className: "eb-alert-warning"
   }, "Without verifying your email ID, you can get access to Openverse as anonymous & your searching limit will be 100 requests/day and 5 requests/hr.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "openverse-placheholderbox__description"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Explore more than 600 million creative works", "essential-blocks")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_template_components_search__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Explore more than 600 million creative works", "eb-openverse-block")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_template_components_search__WEBPACK_IMPORTED_MODULE_11__["default"], {
     setOpenverseModal: setOpenverseModal,
     openverseDataFetch: openverseDataFetch,
     q: q,
@@ -995,7 +995,7 @@ const {
   category
 } = _block_json__WEBPACK_IMPORTED_MODULE_7__;
 ebConditionalRegisterBlockType(_block_json__WEBPACK_IMPORTED_MODULE_7__, {
-  keywords: [(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse", "essential-blocks"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse block", "essential-blocks"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse image", "essential-blocks")],
+  keywords: [(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse", "eb-openverse-block"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse block", "eb-openverse-block"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Openverse image", "eb-openverse-block"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("EB Openverse block", "eb-openverse-block"), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("essential blocks", "eb-openverse-block")],
   icon: _icon__WEBPACK_IMPORTED_MODULE_4__.OpenverseIcon,
   attributes: _attributes__WEBPACK_IMPORTED_MODULE_5__["default"],
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -1256,16 +1256,16 @@ function Inspector(props) {
   }, tab => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eb-tab-controls" + tab.name
   }, tab.name === "general" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("General", "essential-blocks"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("General", "eb-openverse-block"),
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Styles", "essential-blocks"),
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border won't work", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Styles", "eb-openverse-block"),
+    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border won't work", "eb-openverse-block"),
     value: stylePreset,
     options: _constants__WEBPACK_IMPORTED_MODULE_5__.STYLES,
     onChange: stylePreset => changeStyle(stylePreset)
   }), stylePreset === "circle" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("em", null, "Please use equal \"Height\" & \"Width\" for perfect Circle shape.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ResponsiveRangeController, {
-    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "essential-blocks"),
+    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "eb-openverse-block"),
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.IMAGE_WIDTH,
     resRequiredProps: resRequiredProps,
     min: 1,
@@ -1273,7 +1273,7 @@ function Inspector(props) {
     step: 1,
     units: _constants__WEBPACK_IMPORTED_MODULE_5__.SIZE_UNIT_TYPES
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ResponsiveRangeController, {
-    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height", "essential-blocks"),
+    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height", "eb-openverse-block"),
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.IMAGE_HEIGHT,
     resRequiredProps: resRequiredProps,
     min: 0,
@@ -1281,20 +1281,20 @@ function Inspector(props) {
     step: 1,
     units: _constants__WEBPACK_IMPORTED_MODULE_5__.SIZE_UNIT_TYPES
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Auto Fit Image?", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Auto Fit Image?", "eb-openverse-block"),
     checked: autoFit,
     onChange: autoFit => setAttributes({
       autoFit
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Hover Effect", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Hover Effect", "eb-openverse-block"),
     value: hoverEffect,
     options: _constants__WEBPACK_IMPORTED_MODULE_5__.HOVER_EFFECT,
     onChange: hoverEffect => setAttributes({
       hoverEffect
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display Attribution", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display Attribution", "eb-openverse-block"),
     checked: displayAttribution,
     onChange: () => checkAttribution(!displayAttribution) // onChange={() =>
     // 	setAttributes({
@@ -1303,23 +1303,23 @@ function Inspector(props) {
     // }
 
   }), displayAttribution && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Attribution Styles", "essential-blocks"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Attribution Styles", "eb-openverse-block"),
     value: attributionStyle,
     options: _constants__WEBPACK_IMPORTED_MODULE_5__.ATTRIBUTION_STYLES,
     onChange: attributionStyle => changCaptionStyle(attributionStyle)
   }))), tab.name === "styles" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Settings", "essential-blocks")
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Settings", "eb-openverse-block")
   }, !complexStyle && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.BaseControl, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "eb-control-title"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border", "essential-blocks"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BorderShadowControl, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border", "eb-openverse-block"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BorderShadowControl, {
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.IMAGE_BORDER_SHADOW,
     resRequiredProps: resRequiredProps // noShadow
     // noBorder
 
   })), complexStyle && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("em", null, "Border Style doesn't support for \"", stylePreset, " ", "style\"."))), displayAttribution && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Caption Styles", "essential-blocks")
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Caption Styles", "eb-openverse-block")
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Color Controls", "essential-blocks"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Color Controls", "eb-openverse-block"),
     className: "eb-subpanel",
     initialOpen: true,
     disableAlpha: false,
@@ -1328,14 +1328,14 @@ function Inspector(props) {
       onChange: newColor => setAttributes({
         attributionColor: newColor
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "essential-blocks")
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Color", "eb-openverse-block")
     }]
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(TypographyDropdown, {
-    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Typography", "essential-blocks"),
+    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Typography", "eb-openverse-block"),
     typographyPrefixConstant: _constants__WEBPACK_IMPORTED_MODULE_5__.ATTRIBUTION_TYPOGRAPHY,
     resRequiredProps: resRequiredProps
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ResponsiveRangeController, {
-    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "essential-blocks"),
+    baseLabel: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "eb-openverse-block"),
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.ATTRIBUTION_WIDTH,
     resRequiredProps: resRequiredProps,
     units: _constants__WEBPACK_IMPORTED_MODULE_5__.UNIT_TYPES,
@@ -1343,7 +1343,7 @@ function Inspector(props) {
     max: 300,
     step: 1
   }), displayAttribution && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.BaseControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Align", "essential-blocks")
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Text Align", "eb-openverse-block")
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ButtonGroup, null, _constants__WEBPACK_IMPORTED_MODULE_5__.TEXT_ALIGN.map(item => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button // isLarge
   , {
     isPrimary: textAlign === item.value,
@@ -1368,7 +1368,7 @@ function Inspector(props) {
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.WRAPPER_PADDING,
     baseLabel: "Padding"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background", "essential-blocks"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background", "eb-openverse-block"),
     initialOpen: false
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BackgroundControl, {
     controlName: _constants__WEBPACK_IMPORTED_MODULE_5__.WRAPPER_BG,
@@ -1437,22 +1437,22 @@ const save = _ref => {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: imageurl,
     alt: imageAttr.title
-  }), displayAttribution && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), displayAttribution && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "image-attribution"
   }, imageAttr.title && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, imageAttr.foreignUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.foreignUrl
-  }, imageAttr.title), !imageAttr.foreignUrl && imageAttr.title), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "essential-blocks"), imageAttr.creatorUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, imageAttr.title), !imageAttr.foreignUrl && imageAttr.title), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "eb-openverse-block"), imageAttr.creatorUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.creatorUrl
-  }, imageAttr.creator), !imageAttr.creatorUrl && imageAttr.creator), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "essential-blocks"), imageAttr.licenseUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" is licensed under ", "essential-blocks"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, imageAttr.creator), !imageAttr.creatorUrl && imageAttr.creator), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "eb-openverse-block"), imageAttr.licenseUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" is licensed under ", "eb-openverse-block"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.licenseUrl,
     className: "licensed-wrap"
-  }, imageAttr.license + " " + imageAttr.licenseVersion)), !imageAttr.licenseUrl && imageAttr.license + " " + imageAttr.licenseVersion, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" .", "essential-blocks"))))))));
+  }, imageAttr.license + " " + imageAttr.licenseVersion)), !imageAttr.licenseUrl && imageAttr.license + " " + imageAttr.licenseVersion, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" .", "eb-openverse-block")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (save);
@@ -2125,7 +2125,7 @@ const ApiInfo = props => {
     name: "mail-form",
     id: "mail-form",
     class: "openverse-input",
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("user@example.com", "essential-blocks"),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("user@example.com", "eb-openverse-block"),
     defaultValue: !apiInfo.email ? "" : apiInfo.email,
     onChange: e => handleEmailChange(e)
   }), apiInfo.email && emailError && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -2134,7 +2134,7 @@ const ApiInfo = props => {
     type: "text",
     id: "name",
     className: "openverse-input",
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("My amazing project", "essential-blocks"),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("My amazing project", "eb-openverse-block"),
     defaultValue: !apiInfo.name ? "" : apiInfo.name,
     onChange: e => handleNameChange(e)
   }), openverseRegError.status && openverseRegError.type == "Error" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -2143,7 +2143,7 @@ const ApiInfo = props => {
     className: "openverse-api-btn",
     disabled: apiInfo.email && !emailError && apiInfo.name ? false : true,
     onClick: generateAPI
-  }, loadingApi ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Generating ........", "essential-blocks") : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Generate API", "essential-blocks")));
+  }, loadingApi ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Generating ........", "eb-openverse-block") : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Generate API", "eb-openverse-block")));
 };
 
 /***/ }),
@@ -2185,16 +2185,16 @@ function DisplayImage(props) {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.foreignUrl
-  }, imageAttr.title), !imageAttr.foreignUrl && imageAttr.title), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "essential-blocks"), imageAttr.creatorUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, imageAttr.title), !imageAttr.foreignUrl && imageAttr.title), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "eb-openverse-block"), imageAttr.creatorUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.creatorUrl
-  }, imageAttr.creator), !imageAttr.creatorUrl && imageAttr.creator), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "essential-blocks"), imageAttr.licenseUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" is licensed under ", "essential-blocks"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, imageAttr.creator), !imageAttr.creatorUrl && imageAttr.creator), imageAttr.creator && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" By ", "eb-openverse-block"), imageAttr.licenseUrl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" is licensed under ", "eb-openverse-block"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     target: "_blank",
     rel: "noopener noreferrer",
     href: imageAttr.licenseUrl,
     className: "licensed-wrap"
-  }, imageAttr.license + " " + imageAttr.licenseVersion)), !imageAttr.licenseUrl && imageAttr.license + " " + imageAttr.licenseVersion, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" .", "essential-blocks")))));
+  }, imageAttr.license + " " + imageAttr.licenseVersion)), !imageAttr.licenseUrl && imageAttr.license + " " + imageAttr.licenseVersion, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(" .", "eb-openverse-block")))));
 }
 
 /***/ }),
@@ -4810,7 +4810,7 @@ const OpenverseMainIcon = props => {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "M0.999969 32.6025C0.999969 37.8 5.17217 42 10.3353 42V23.2312C5.17217 23.2312 0.999969 27.4312 0.999969 32.6025Z",
     class: "circle"
-  }))), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Openverse", "essential-blocks"));
+  }))), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Openverse", "eb-openverse-block"));
 };
 
 /***/ }),
@@ -4905,7 +4905,7 @@ __webpack_require__.r(__webpack_exports__);
 function NoData(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eb-openverse-no-data"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_icons_noDataIcon__WEBPACK_IMPORTED_MODULE_2__.NoDataIcon, null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("We couldn't find anything", "essential-blocks")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Try a different query or use one of the external sources to expand your search.", "essential-blocks")));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_icons_noDataIcon__WEBPACK_IMPORTED_MODULE_2__.NoDataIcon, null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("We couldn't find anything", "eb-openverse-block")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Try a different query or use one of the external sources to expand your search.", "eb-openverse-block")));
 }
 
 /***/ }),
@@ -4958,14 +4958,14 @@ function Search(props) {
     name: "search-form",
     id: "search-form",
     class: "openverse-search-input",
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search for...", "essential-blocks"),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search for...", "eb-openverse-block"),
     value: q,
     onChange: e => setQ(e.target.value),
     onKeyPress: handleKeyPress
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "openverse-search-btn",
     onClick: handleSearch
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search", "essential-blocks")));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search", "eb-openverse-block")));
 }
 
 /***/ }),
@@ -5234,7 +5234,7 @@ function SeachModal(props) {
     className: "openverse-modal__header"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "title-section"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Select Media", "essential-blocks")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Select Media", "eb-openverse-block")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "close-btn",
     onClick: () => props.setTrigger(false)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -5253,7 +5253,7 @@ function SeachModal(props) {
     className: "search-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "search-key"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search Key:", "essential-blocks"), " "), q), loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search Key:", "eb-openverse-block"), " "), q), loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
     limit: limit
   }), !loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, openverseError.status && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "openverse-error"
@@ -5264,13 +5264,13 @@ function SeachModal(props) {
   })), totalPages > pagination && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "loadmore-btn",
     onClick: loadMore
-  }, loading ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Loading ...", "essential-blocks") : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Load More", "essential-blocks"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, loading ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Loading ...", "eb-openverse-block") : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Load More", "eb-openverse-block"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "search-filter"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("FILTER BY", "essential-blocks")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("FILTER BY", "eb-openverse-block")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", {
     className: "filters-form"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("LICENSES", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_LICENSES.map((_ref, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("LICENSES", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_LICENSES.map((_ref, index) => {
     let {
       label,
       value
@@ -5291,7 +5291,7 @@ function SeachModal(props) {
     }, label));
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("LICENSE TYPE", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_LICENSE_TYPE.map((_ref2, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("LICENSE TYPE", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_LICENSE_TYPE.map((_ref2, index) => {
     let {
       label,
       value
@@ -5312,7 +5312,7 @@ function SeachModal(props) {
     }, label));
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Type", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_CATEGORY.map((_ref3, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Type", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_CATEGORY.map((_ref3, index) => {
     let {
       label,
       value
@@ -5333,7 +5333,7 @@ function SeachModal(props) {
     }, label));
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Extension", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_EXTENSION.map((_ref4, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Extension", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_EXTENSION.map((_ref4, index) => {
     let {
       label,
       value
@@ -5354,7 +5354,7 @@ function SeachModal(props) {
     }, label));
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Aspect ratio", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_ASPECT_RATIO.map((_ref5, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Aspect ratio", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_ASPECT_RATIO.map((_ref5, index) => {
     let {
       label,
       value
@@ -5375,7 +5375,7 @@ function SeachModal(props) {
     }, label));
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "filter-item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Size", "essential-blocks")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_SIZE.map((_ref6, index) => {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image Size", "eb-openverse-block")), _constants__WEBPACK_IMPORTED_MODULE_5__.FILTER_SIZE.map((_ref6, index) => {
     let {
       label,
       value
@@ -5400,7 +5400,7 @@ function SeachModal(props) {
     className: "select-btn",
     disabled: !selectItem ? true : false,
     onClick: uploadImage
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Select", "essential-blocks"))))) : "";
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Select", "eb-openverse-block"))))) : "";
 }
 
 /***/ }),
@@ -5595,7 +5595,7 @@ module.exports = window["wp"]["primitives"];
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"apiVersion":"2","name":"openverse-block/openverse-block","title":"Openverse Block By Essential Blocks","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website","textdomain":"openverse-block","editorScript":"file:./dist/index.js"}');
+module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"Openverse Block By Essential Blocks","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
 
 /***/ })
 

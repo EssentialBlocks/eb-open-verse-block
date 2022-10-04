@@ -285,7 +285,7 @@ export default function Edit(props) {
               <Toolbar>
                 <ToolbarButton
                   className="components-toolbar__control"
-                  label={__("Replace Image", "essential-blocks")}
+                  label={__("Replace Image", "eb-openverse-block")}
                   icon={edit}
                   onClick={() => setOpenverseModal(true)}
                 />
@@ -318,7 +318,7 @@ export default function Edit(props) {
                         <div className="openverse-placheholderbox__description">
                           {__(
                             "Provide your Email ID & unique project Name to get access to Openverse  using API, these are required field",
-                            "essential-blocks"
+                            "eb-openverse-block"
                           )}
 
                           <span style={{ color: "#ff0000" }}>*</span>
@@ -355,7 +355,7 @@ export default function Edit(props) {
                         <div className="openverse-placheholderbox__description">
                           {__(
                             "Explore more than 600 million creative works",
-                            "essential-blocks"
+                            "eb-openverse-block"
                           )}
                         </div>
 
