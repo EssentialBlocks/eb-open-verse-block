@@ -1,35 +1,45 @@
-=== Openverse block ===
+=== Openverse Block By Essential Blocks ===
 Contributors: wpdevteam, re_enter_rupok, Asif2BD, rahat89, sumaiyasiddika
-Tags: block, blocks, openverse, image, gutenberg, gutenberg blocks
+Tags: Free images, openverse, stock photos, image block, images, photos, Gutenberg image block, WordPress images
 Requires at least: 5.6
+Requires php: 5.6
 Tested up to: 6.0
 Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Display Your FAQs & Improve User Experience with Openverse block.
+Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website.
 
 == Description ==
 
-**Accordion Toggle** helps you to display FAQs or key pieces of content in a way that readers can easily find what they are looking for. Using this Accordion Toggle plugin, you can create those key contents within the Gutenberg.
+**Openverse Block By Essential Blocks** helps you to add all amazing free stock photos, royalty free images, CC licensed images to your WordPress website in 1-click.
 
-**Completely Customizable:** You can customize Accordion Toggle just the way you want.
+**STUNNING FEATURES:**
 
-**Super Light-weight:** No extra resources used and it's highly optimized for super fast loading & instant Live editing.
+- No configuration needed
+- Direct download images from Openverse
+- Easy search from 600+ million creative works
+- Store images straight into the media library
+- Automatically add image attributes (original image author, image name, etc.) as image caption
 
-**Dedicated Support:** We’ve an extraordinary support team ready to help you. Ask your questions in the support forum, we’ll get back to you immediately.
+
+**Completely Customizable:** You can customize Openverse Block just the way you want.
+
+**Super Light-weight:** No extra resources used and it’s highly optimized for super fast loading & instant live editing.
+
+**Dedicated Support:** We have an extraordinary support team ready to help you. Ask your questions in the support forum, we’ll get back to you immediately.
 
 
 ## 🚀 BACKED BY A TRUSTED TEAM ##
 
-This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team behind the most popular elements library [Essential Addons for Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/) (used by almost 700,000 happy users from 180+ countries).
+This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team behind the most popular elements library [Essential Addons for Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/) (used by almost 1 million+ happy users from 180+ countries).
 
 ## 👨‍💻 DOCUMENTATION AND SUPPORT ##
 
 - For documentation and tutorials go to our [documentation](https://essential-blocks.com/docs/)
-- To report issue and contribution visit [Github](https://github.com/EssentialBlocks/accordion-toggle).
-- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/accordion-toggle).
-- For more information about features, FAQs and documentation, check out our website at [WPDeveloper](https://wpdeveloper.net/).
+- To report issue and contribution visit [Github](https://github.com/EssentialBlocks/openverse-block).
+- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/openverse-block).
+- For more information about features, FAQs and documentation, check out our website at [WPDeveloper](https://wpdeveloper.com/).
 
 ## 🙌 JOIN THE COMMUNITY ##
 
@@ -37,11 +47,12 @@ This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team
 
 🤝 Join our [Facebook Community](https://www.facebook.com/groups/wpdeveloper.net/) & get connected with expert web creators like yourself.
 
-🧡 LOVED Accordion/Toggle? Rate us on WordPress Repository
+🧡 LOVED Openverse block? Rate us on WordPress Repository
 
 🔥 GET FREEBIES FOR YOUR WORDPRESS SITE
 
 Consider checking out our other WordPress solutions & boost your WordPress website:
+💡 [Essential Blocks For Gutenberg](https://wordpress.org/plugins/essential-blocks/): Get all stunning & interactive Gutenberg blocks to design your website seamlessly
 
 🔝 [Essential Addons For Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/): Most popular Elementor addons with 70+ widgets & ready blocks
 
@@ -51,18 +62,18 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 📚 [BetterDocs](https://wordpress.org/plugins/betterdocs/): Best Documentation & Knowledge Base Plugin for WordPress reduce manual support tickets & improve user experience.
 
-⏰ [WP Scheduled Posts](https://wordpress.org/plugins/wp-scheduled-posts/): Advanced editorial calendar & complete solution for WordPress Post Scheduling, social sharing, missed scheduled alerts and more.
+⏰ [SchedulePress](https://wordpress.org/plugins/wp-scheduled-posts/): Advanced editorial calendar & complete solution for WordPress Post Scheduling, social sharing, missed scheduled alerts and more.
 
 ⭐ [ReviewX](https://wordpress.org/plugins/reviewx/): WooCommerce Product review plugin that allows users to submit product reviews with multiple criteria, photos, video and more
 
-⚡ [Flexia](http://wordpress.org/plugins/flexia): Most lightweight, customizable & multi purpose theme for WordPress
+⚡ [Flexia](http://wordpress.org/plugins/flexia): Most lightweight, customizable & multipurpose theme for WordPress
 
 
 == Installation ==
 
 = Modern Way: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For "Openverse block".
+2. Search For "Openverse Block By Essential Blocks".
 3. Install in 1-click
 
 = Old Way: =
@@ -77,12 +88,7 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 Yes, it will work with any standard WordPress theme.
 
-== Screenshots ==
-
-
 == Changelog ==
 
-= 1.0.0 - 23/07/2020 =
+= 1.0.0 - 04/10/2022 =
 * Initial Release
-
-== Upgrade Notice ==
