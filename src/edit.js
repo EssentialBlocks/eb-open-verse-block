@@ -9,8 +9,7 @@ import {
 } from "@wordpress/block-editor";
 import { ToolbarButton, Toolbar } from "@wordpress/components";
 import { edit } from "@wordpress/icons";
-import { Fragment, render, useEffect, useState } from "@wordpress/element";
-import apiFetch from "@wordpress/api-fetch";
+import { useEffect, useState } from "@wordpress/element";
 import { select, useSelect } from "@wordpress/data";
 
 /**
@@ -35,22 +34,14 @@ export default function Edit(props) {
     resOption,
     blockId,
     blockMeta,
-    displayAttribution,
-    attributionColor,
-    attributionBGColor,
     horizontalAlign,
     verticalAlign,
-    verticalAlignCap2,
-    textAlign,
     stylePreset,
     attributionStyle,
     hoverEffect,
     imageAlign,
-    complexStyle,
-    autoFit,
     classHook,
     imageurl,
-    apiKey,
     apiInfo,
   } = attributes;
 
@@ -296,7 +287,7 @@ export default function Edit(props) {
 
         <div className={`eb-parent-wrapper eb-parent-${blockId} ${classHook}`}>
           <div
-            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} attribution-horizontal-${horizontalAlign} attribution-vertical-${verticalAlign} ${verticalAlignCap2} ${hoverEffect}`}
+            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect}`}
             data-id={blockId}
           >
             {imageurl && <DisplayImage attributes={attributes}></DisplayImage>}

@@ -21,7 +21,7 @@ const save = ({ attributes }) => {
       {imageurl && (
         <div className={`eb-parent-wrapper eb-parent-${blockId} ${classHook}`}>
           <figure
-            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} attribution-horizontal-${horizontalAlign} attribution-vertical-${verticalAlign} ${verticalAlignCap2} ${hoverEffect}`}
+            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle}  ${hoverEffect}`}
             data-id={blockId}
           >
             <div className="image-wrapper">
@@ -32,7 +32,7 @@ const save = ({ attributes }) => {
               <>
                 <div className="image-attribution">
                   {imageAttr.title && (
-                    <>
+                    <span>
                       {imageAttr.foreignUrl && (
                         <a
                           target="_blank"
@@ -43,11 +43,11 @@ const save = ({ attributes }) => {
                         </a>
                       )}
                       {!imageAttr.foreignUrl && imageAttr.title}
-                    </>
+                    </span>
                   )}
                   {/* // creator */}
                   {imageAttr.creator && (
-                    <>
+                    <span>
                       {__(" By ", "eb-openverse-block")}
 
                       {imageAttr.creatorUrl && (
@@ -60,11 +60,11 @@ const save = ({ attributes }) => {
                         </a>
                       )}
                       {!imageAttr.creatorUrl && imageAttr.creator}
-                    </>
+                    </span>
                   )}
                   {/* // licensed */}
                   {imageAttr.creator && (
-                    <>
+                    <span>
                       {__(" By ", "eb-openverse-block")}
 
                       {imageAttr.licenseUrl && (
@@ -84,7 +84,7 @@ const save = ({ attributes }) => {
                         imageAttr.license + " " + imageAttr.licenseVersion}
 
                       {__(" .", "eb-openverse-block")}
-                    </>
+                    </span>
                   )}
                 </div>
               </>

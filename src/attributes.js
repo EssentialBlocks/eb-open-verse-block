@@ -70,7 +70,7 @@ const attributes = {
   },
   displayAttribution: {
     type: "boolean",
-    default: false,
+    default: true,
   },
   attributionColor: {
     type: "string",
@@ -85,10 +85,6 @@ const attributes = {
     default: "center",
   },
   verticalAlign: {
-    type: "string",
-    default: "bottom",
-  },
-  verticalAlignCap2: {
     type: "string",
     default: "bottom",
   },
@@ -157,10 +153,18 @@ const attributes = {
   // border shadow attributes ⬇
   ...generateBorderShadowAttributes(WRAPPER_BORDER_SHADOW, {
     bdrDefaults: {
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0,
+      top: 1,
+      bottom: 1,
+      right: 1,
+      left: 1,
+    },
+    defaultBdrColor: "#C1CDE1",
+    defaultBdrStyle: "solid",
+    rdsDefaults: {
+      top: 15,
+      bottom: 15,
+      right: 15,
+      left: 15,
     },
     // noShadow: true,
     // noBorder: true,
