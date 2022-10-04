@@ -50,7 +50,7 @@ class Openverse_Helper
             $controls_dependencies = include_once OPENVERSE_BLOCK_ADMIN_PATH . '/dist/controls.asset.php';
             wp_register_script(
                 "openverse-block-controls-util",
-                OPENVERSE_BLOCK_ADMIN_URL . '/dist/controls.js',
+                OPENVERSE_BLOCK_ADMIN_URL . 'dist/controls.js',
                 array_merge($controls_dependencies['dependencies']),
                 $controls_dependencies['version'],
                 true
@@ -59,6 +59,7 @@ class Openverse_Helper
             wp_localize_script('openverse-block-controls-util', 'EssentialBlocksLocalize', array(
                 'eb_wp_version' => (float) get_bloginfo('version'),
                 'rest_rootURL' => get_rest_url(),
+                'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'openverse_nonce' => wp_create_nonce('eb-openverse-nonce'),
                 'openverse_item_nonce' => wp_create_nonce('eb-openverse-item-nonce'),
                 'openverse_reg_nonce' => wp_create_nonce('eb-openverse-reg-nonce'),
@@ -77,7 +78,7 @@ class Openverse_Helper
 
             wp_enqueue_style(
                 'essential-blocks-editor-css',
-                OPENVERSE_BLOCK_ADMIN_URL . '/dist/controls.css',
+                OPENVERSE_BLOCK_ADMIN_URL . 'dist/controls.css',
                 array(),
                 $controls_dependencies['version'],
                 'all'

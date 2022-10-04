@@ -267,7 +267,7 @@ export default function SeachModal(props) {
 								<>
 									{openverseError.status && (
 										<span className="openverse-error">
-											{openverseError.message}
+											{/* {openverseError.message} */}
 
 											<NoData></NoData>
 										</span>

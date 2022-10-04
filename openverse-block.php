@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name:     Openverse Block
+ * Plugin Name:     Openverse Block By Essential Blocks
  * Description:     Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website.
- * Version:         1.1.2
+ * Version:         1.0.0
  * Author:          WPDeveloper
  * Author URI:      https://wpdeveloper.net
  * License:         GPL-3.0-or-later

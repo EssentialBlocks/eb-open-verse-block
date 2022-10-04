@@ -29,7 +29,7 @@
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    // "@fonticonpicker/react-fonticonpicker": "hz-tyfoon/react-fonticonpicker#c5914813163490f98e1a1756a6e5a4479e777c34",
+    "@fonticonpicker/react-fonticonpicker": "hz-tyfoon/react-fonticonpicker#c5914813163490f98e1a1756a6e5a4479e777c34",
     "classnames": "^2.3.1",
     "react-transition-group": "^4.3.0"
   }

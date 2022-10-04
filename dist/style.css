@@ -314,6 +314,9 @@
   height: 40px;
 }
 
+.eb-openverse-no-data {
+  text-align: center;
+}
 .eb-openverse-no-data p {
   margin: 0 0 20px 0;
   padding: 0;

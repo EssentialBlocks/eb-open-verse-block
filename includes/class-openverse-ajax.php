@@ -77,7 +77,7 @@ class Openverse_Block_Ajax
         $url = "https://api.openverse.engineering/v1/auth_tokens/register/";
 
         
-        $response = Essential_Blocks_Api::post(
+        $response = Openverse_Blocks_Api::post(
             $url,
             array(
                 'name' => $name,
@@ -85,7 +85,7 @@ class Openverse_Block_Ajax
                 'description' => '1234xyzv',
                 'email' => $email,
             ),
-            EBHelpers::makeRequestHeader(array(
+            Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'application/json',
             )),
             array(
@@ -147,14 +147,14 @@ class Openverse_Block_Ajax
         // Registration for client id and client secret
         $url = "https://api.openverse.engineering/v1/auth_tokens/token/";
 
-        $response = Essential_Blocks_Api::post(
+        $response = Openverse_Blocks_Api::post(
             $url,
             array(
                 'client_id' => $client_id,
                 'client_secret' => $client_secret,
                 'grant_type' => 'client_credentials',
             ),
-            EBHelpers::makeRequestHeader(array(
+            Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'multipart/form-data',
             )),
             array(
@@ -218,10 +218,10 @@ class Openverse_Block_Ajax
         );
         $param = array_merge($param, $values);
 
-        $response = Essential_Blocks_Api::get(
+        $response = Openverse_Blocks_Api::get(
             $url,
             $param,
-            EBHelpers::makeRequestHeader(array(
+            Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'application/json',
                 'X-API-KEY' => $token,
             )),

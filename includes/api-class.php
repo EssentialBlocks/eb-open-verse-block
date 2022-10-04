@@ -109,4 +109,12 @@ class Openverse_Blocks_Api {
         }
         return json_decode( $response['body'] );
     }
+
+
+    public static function makeRequestHeader($headers = array())
+    {
+        return array(
+            'headers' => $headers
+        );
+    }
 }
