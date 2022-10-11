@@ -4249,6 +4249,10 @@ const LoadingItem = props => {
     });
 
     (function (s, i, o, w, a, b) {
+      if (!document.getElementById(i.root)) {
+        return;
+      }
+
       (a = document.getElementById(i.root)).svgatorPlayer = {
         ready: function (a) {
           b = [];
