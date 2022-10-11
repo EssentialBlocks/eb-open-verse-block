@@ -114,12 +114,11 @@
   height: 18px;
   width: 18px;
   flex-shrink: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
   border-radius: 2px;
   border-width: 1px;
-  --tw-border-opacity: 1;
   border-color: #8c8f94;
   -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
@@ -153,6 +152,9 @@
 
 .openverse-search-section {
   display: flex;
+  flex: auto;
+  flex-wrap: nowrap;
+  max-width: 100%;
 }
 
 .openverse-search-input:focus {
@@ -165,8 +167,8 @@
   background-size: 16px 16px;
   background-position: left 10px center;
   background-repeat: no-repeat;
-  padding: 10px 2em !important;
-  padding-left: 2.7em !important;
+  padding: 10px 1em !important;
+  padding-left: 2em !important;
   border: 1px solid #2673ff !important;
   border-radius: 0 !important;
   color: #000;
@@ -178,12 +180,13 @@
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-  width: 85%;
+  min-width: 170px;
+  flex-grow: 1;
   height: 50px;
 }
 
 .openverse-search-btn {
-  width: 15%;
+  min-width: 100px;
   margin: 0 auto;
   height: 50px;
   display: block;
@@ -209,6 +212,20 @@
   transition: box-shadow 0.1s linear;
 }
 
+@media all and (max-width: 767px) {
+  .openverse-search-section {
+    display: block;
+  }
+
+  .openverse-search-input {
+    margin-bottom: 15px;
+  }
+
+  .openverse-search-input,
+.openverse-search-btn {
+    width: 100%;
+  }
+}
 .api-info .openverse-input {
   background-color: #fff;
   background-size: 16px 16px;
