@@ -345,7 +345,7 @@ class EB_Openverse_Block_Ajax
     {
        
         $settings = is_array(get_option('eb_settings')) ? get_option('eb_settings') : [];
-        if (strlen($reg_data) === 0 ) {
+        if (empty($reg_data)) {
             unset($settings['openverseApi']);
         }
         else {

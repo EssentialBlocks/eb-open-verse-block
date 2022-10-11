@@ -27,6 +27,7 @@ import DisplayImage from "./template-components/displayImage";
 import Search from "./template-components/search";
 import { OpenverseMainIcon } from "./template-components/icons/openverseMainIcon";
 import { ApiInfo } from "./template-components/apiInfo";
+import { isEmpty } from "lodash";
 
 export default function Edit(props) {
   const { attributes, setAttributes, className, clientId, isSelected } = props;
@@ -199,7 +200,9 @@ export default function Edit(props) {
 
   // fetch
   useEffect(() => {
-    openverseDataFetch(true);
+    if (!isEmpty(q)) {
+      openverseDataFetch(true);
+    }
   }, [filterData]);
 
   // fetch pagination data
