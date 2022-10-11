@@ -785,9 +785,9 @@ function Edit(props) {
     setShowForm: setShowForm
   })), !showForm && !loadingApi && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, openverseRegError.status && openverseRegError.type == "Success" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eb-alert eb-alert-success"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, "Congratulations!"), " You have generated a API. Please verify your Email", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, "Hurray!"), " You have generated an API successfully! Please verify your email to enjoy uninterrupted access to", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "eb-alert-warning"
-  }, "Without verifying your email ID, you can get access to Openverse as anonymous & your searching limit will be 100 requests/day and 5 requests/hr.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "Without verifying your email you can get access to Openverse as anonymous and your search limit will be 100 requests/ day and 5 requests/ hr.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "openverse-placheholderbox__description"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Explore more than 600 million creative works", "eb-openverse-block")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_template_components_search__WEBPACK_IMPORTED_MODULE_10__["default"], {
     setOpenverseModal: setOpenverseModal,

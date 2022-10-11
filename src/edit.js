@@ -335,13 +335,13 @@ export default function Edit(props) {
                         {openverseRegError.status &&
                           openverseRegError.type == "Success" && (
                             <div className="eb-alert eb-alert-success">
-                              <strong>Congratulations!</strong> You have
-                              generated a API. Please verify your Email
+                              <strong>Hurray!</strong> You have generated an API
+                              successfully! Please verify your email to enjoy
+                              uninterrupted access to
                               <span className="eb-alert-warning">
-                                Without verifying your email ID, you can get
-                                access to Openverse as anonymous & your
-                                searching limit will be 100 requests/day and 5
-                                requests/hr.
+                                Without verifying your email you can get access
+                                to Openverse as anonymous and your search limit
+                                will be 100 requests/ day and 5 requests/ hr.
                               </span>
                               {/* {openverseRegError.message} */}
                             </div>
