@@ -276,6 +276,11 @@
   .openverse-search-btn {
     width: 100%;
   }
+
+  .openverse-modal__inner {
+    left: 0 !important;
+    width: 90% !important;
+  }
 }
 
 .api-info {
