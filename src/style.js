@@ -260,13 +260,14 @@ export default function Style(props) {
 		background-color: #fff;
    }
 	.openverse-modal__header {
-		position: relative;
+		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 30px;
+		height: 60px;
 		z-index: 200;
 		padding: 15px;
+		box-sizing: border-box;
    }
 	.title-section {
 		padding: 0;
@@ -292,17 +293,27 @@ export default function Style(props) {
 		transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
    }
 	.openverse-modal__content {
-		position: relative;
-		height: calc(100% - 195px);;
+		position: absolute;
+		top: 61px;
+		left: 0;
+		right: 0;
+		bottom: 61px;
+		height: auto;
 		width: auto;
 		margin: 0;
+		overflow: auto;
 		background: #fff;
 		border-top: 1px solid #dcdcde;
    }
 	.search-section {
-		position: relative;
-		height: 45px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		height: 75px;
 		padding: 15px;
+		box-sizing: border-box;
 		border: 0 solid #dcdcde;
 		overflow: hidden;
 		border-bottom: 1px solid #dcdcde;
@@ -314,11 +325,13 @@ export default function Style(props) {
    }
 	
 	.search-result-section {
-		position: relative;
+		position: absolute;
+		top: 75px;
+		left: 0;
+		bottom: 0;
 		overflow: auto;
 		outline: 0;
 		width: 100%;
-		max-height: 100%;
 		display: grid;
 		grid-template-columns: 75% 25%;
    }
@@ -340,11 +353,11 @@ export default function Style(props) {
 		left: 0;
 		right: 0;
 		z-index: 100;
-		height: 30px;
+		height: 61px;
 		padding: 15px;
+		box-sizing: border-box;
 		border-top: 1px solid #dcdcde;
 		text-align: right;
-		background: #fff;
    }
 	.openverse-modal__footer button {
 		font-size: 13px;
