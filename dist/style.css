@@ -9,6 +9,10 @@
   margin: 0 0 1em 0;
   /* Zoom In #2 */
 }
+.eb-openverse-wrapper.no-image {
+  border-radius: 0 !important;
+  border: none !important;
+}
 .eb-openverse-wrapper.img-style-triangle .image-wrapper {
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);

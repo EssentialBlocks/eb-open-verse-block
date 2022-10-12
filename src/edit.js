@@ -290,7 +290,9 @@ export default function Edit(props) {
 
         <div className={`eb-parent-wrapper eb-parent-${blockId} ${classHook}`}>
           <div
-            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect}`}
+            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect} ${
+              imageurl ? "" : "no-image"
+            }`}
             data-id={blockId}
           >
             {imageurl && <DisplayImage attributes={attributes}></DisplayImage>}

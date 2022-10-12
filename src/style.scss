@@ -6,6 +6,11 @@
 .eb-openverse-wrapper {
   margin: 0 0 1em 0;
 
+  &.no-image {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
   &.img-style-triangle .image-wrapper {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }

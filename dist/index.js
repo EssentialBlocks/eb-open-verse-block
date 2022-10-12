@@ -759,7 +759,7 @@ function Edit(props) {
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: `eb-parent-wrapper eb-parent-${blockId} ${classHook}`
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: `eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect}`,
+    className: `eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect} ${imageurl ? "" : "no-image"}`,
     "data-id": blockId
   }, imageurl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_template_components_displayImage__WEBPACK_IMPORTED_MODULE_9__["default"], {
     attributes: attributes
