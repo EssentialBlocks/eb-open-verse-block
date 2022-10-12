@@ -1,6 +1,6 @@
 === EB Open Verse Block By Essential Blocks ===
 Contributors: wpdevteam, re_enter_rupok, Asif2BD, rahat89, sumaiyasiddika
-Tags: Free images, EB Open Verse, stock photos, image block, images, photos, Gutenberg image block, WordPress images
+Tags: Free images, openverse, stock photos, image block, images, photos, Gutenberg image block, WordPress images, EB Open Verse
 Requires at least: 5.6
 Requires php: 5.6
 Tested up to: 6.0
@@ -25,7 +25,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 
 **Completely Customizable:** You can customize EB Open Verse Block just the way you want.
 
-**Super Light-weight:** No extra resources used and it’s highly optimized for super fast loading & instant live editing.
+**Super Light-weight:** No extra resources are used and it’s highly optimized for super fast loading & instant live editing.
 
 **Dedicated Support:** We have an extraordinary support team ready to help you. Ask your questions in the support forum, we’ll get back to you immediately.
 
@@ -60,7 +60,7 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 🔔 [NotificationX](https://wordpress.org/plugins/notificationx/): Best Social Proof & FOMO Marketing Solution to increase conversion rates
 
-📚 [BetterDocs](https://wordpress.org/plugins/betterdocs/): Best Documentation & Knowledge Base Plugin for WordPress reduce manual support tickets & improve user experience.
+📚 [BetterDocs](https://wordpress.org/plugins/betterdocs/): Best Documentation & Knowledge Base Plugin for WordPress to reduce manual support tickets & improve user experience.
 
 ⏰ [SchedulePress](https://wordpress.org/plugins/wp-scheduled-posts/): Advanced editorial calendar & complete solution for WordPress Post Scheduling, social sharing, missed scheduled alerts and more.
 

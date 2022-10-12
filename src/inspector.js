@@ -161,10 +161,10 @@ function Inspector(props) {
           attributionStyle: selected,
           textAlign: "left",
           attributionColor: "#211C70",
-          captionPaddingBottom: "15",
-          captionPaddingLeft: "30",
-          captionPaddingRight: "30",
-          captionPaddingTop: "15",
+          captionPaddingBottom: "",
+          captionPaddingLeft: "10",
+          captionPaddingRight: "10",
+          captionPaddingTop: "20",
           captionPaddingUnit: "px",
           captionPaddingisLinked: false,
 
@@ -182,6 +182,13 @@ function Inspector(props) {
           wrpBorderShadowRds_Top: "15",
           wrpBorderShadowRds_Unit: "px",
           wrpBorderShadowRds_isLinked: true,
+
+          wrpPaddingBottom: "15",
+          wrpPaddingLeft: "15",
+          wrpPaddingRight: "15",
+          wrpPaddingTop: "15",
+          wrpPaddingUnit: "px",
+          wrpPaddingisLinked: false,
         });
         break;
       case "attribution-style-2":
@@ -210,6 +217,13 @@ function Inspector(props) {
           wrpBorderShadowRds_Top: "0",
           wrpBorderShadowRds_Unit: "px",
           wrpBorderShadowRds_isLinked: true,
+
+          wrpPaddingBottom: "0",
+          wrpPaddingLeft: "0",
+          wrpPaddingRight: "0",
+          wrpPaddingTop: "0",
+          wrpPaddingUnit: "px",
+          wrpPaddingisLinked: false,
         });
         break;
       default:
@@ -333,7 +347,9 @@ function Inspector(props) {
 
               {tab.name === "styles" && (
                 <>
-                  <PanelBody title={__("Image Settings", "eb-open-verse-block")}>
+                  <PanelBody
+                    title={__("Image Settings", "eb-open-verse-block")}
+                  >
                     {!complexStyle && (
                       <>
                         <BaseControl>

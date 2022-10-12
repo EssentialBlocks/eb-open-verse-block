@@ -175,7 +175,13 @@ const attributes = {
   ...generateTypographyAttributes(Object.values(_typoConstants__WEBPACK_IMPORTED_MODULE_1__)),
   // margin padding attributes ⬇
   ...generateDimensionsAttributes(_constants__WEBPACK_IMPORTED_MODULE_0__.WRAPPER_MARGIN),
-  ...generateDimensionsAttributes(_constants__WEBPACK_IMPORTED_MODULE_0__.WRAPPER_PADDING),
+  ...generateDimensionsAttributes(_constants__WEBPACK_IMPORTED_MODULE_0__.WRAPPER_PADDING, {
+    top: 15,
+    bottom: 15,
+    right: 15,
+    left: 15,
+    isLinked: false
+  }),
   ...generateDimensionsAttributes(_constants__WEBPACK_IMPORTED_MODULE_0__.ATTRIBUTION_MARGIN, {
     top: 0,
     bottom: 0,
@@ -184,10 +190,10 @@ const attributes = {
     isLinked: false
   }),
   ...generateDimensionsAttributes(_constants__WEBPACK_IMPORTED_MODULE_0__.ATTRIBUTION_PADDING, {
-    top: 15,
-    bottom: 15,
-    right: 30,
-    left: 30,
+    top: 20,
+    bottom: 0,
+    right: 10,
+    left: 10,
     isLinked: false
   }),
   // border shadow attributes ⬇
@@ -747,6 +753,7 @@ function Edit(props) {
       }).catch(err => console.log(err));
     }
   }, [pagination]);
+  console.log('attributes', attributes);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isSelected && imageurl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_inspector__WEBPACK_IMPORTED_MODULE_6__["default"], props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockAlignmentToolbar, {
     value: imageAlign,
     onChange: newAlign => setimageAlign(newAlign),
@@ -785,7 +792,7 @@ function Edit(props) {
     setShowForm: setShowForm
   })), !showForm && !loadingApi && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, openverseRegError.status && openverseRegError.type == "Success" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eb-alert eb-alert-success"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, "Hurray!"), " You have generated an API successfully! Please verify your email to enjoy uninterrupted access to", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, "Hurray!"), " You have generated an API successfully! Please verify your email to enjoy uninterrupted access to Openverse", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "eb-alert-warning"
   }, "Without verifying your email you can get access to Openverse as anonymous and your search limit will be 100 requests/ day and 5 requests/ hr.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "openverse-placheholderbox__description"
@@ -1150,10 +1157,10 @@ function Inspector(props) {
           attributionStyle: selected,
           textAlign: "left",
           attributionColor: "#211C70",
-          captionPaddingBottom: "15",
-          captionPaddingLeft: "30",
-          captionPaddingRight: "30",
-          captionPaddingTop: "15",
+          captionPaddingBottom: "",
+          captionPaddingLeft: "10",
+          captionPaddingRight: "10",
+          captionPaddingTop: "20",
           captionPaddingUnit: "px",
           captionPaddingisLinked: false,
           wrpBorderShadowBdr_Bottom: "1",
@@ -1169,7 +1176,13 @@ function Inspector(props) {
           wrpBorderShadowRds_Right: "15",
           wrpBorderShadowRds_Top: "15",
           wrpBorderShadowRds_Unit: "px",
-          wrpBorderShadowRds_isLinked: true
+          wrpBorderShadowRds_isLinked: true,
+          wrpPaddingBottom: "15",
+          wrpPaddingLeft: "15",
+          wrpPaddingRight: "15",
+          wrpPaddingTop: "15",
+          wrpPaddingUnit: "px",
+          wrpPaddingisLinked: false
         });
         break;
       case "attribution-style-2":
@@ -1196,7 +1209,13 @@ function Inspector(props) {
           wrpBorderShadowRds_Right: "0",
           wrpBorderShadowRds_Top: "0",
           wrpBorderShadowRds_Unit: "px",
-          wrpBorderShadowRds_isLinked: true
+          wrpBorderShadowRds_isLinked: true,
+          wrpPaddingBottom: "0",
+          wrpPaddingLeft: "0",
+          wrpPaddingRight: "0",
+          wrpPaddingTop: "0",
+          wrpPaddingUnit: "px",
+          wrpPaddingisLinked: false
         });
         break;
       default:

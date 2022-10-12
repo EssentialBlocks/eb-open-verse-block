@@ -259,6 +259,8 @@ export default function Edit(props) {
     }
   }, [pagination]);
 
+  console.log('attributes', attributes)
+
   return (
     <>
       {isSelected && imageurl && <Inspector {...props} />}
@@ -339,7 +341,7 @@ export default function Edit(props) {
                             <div className="eb-alert eb-alert-success">
                               <strong>Hurray!</strong> You have generated an API
                               successfully! Please verify your email to enjoy
-                              uninterrupted access to
+                              uninterrupted access to Openverse
                               <span className="eb-alert-warning">
                                 Without verifying your email you can get access
                                 to Openverse as anonymous and your search limit

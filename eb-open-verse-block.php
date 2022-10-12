@@ -127,7 +127,7 @@ function create_block_EB_OPEN_VERSE_BLOCK_init()
 
 	if (!WP_Block_Type_Registry::get_instance()->is_registered('essential-blocks/openverse')) {
 		register_block_type(
-			EB_Openverse_Helper::get_block_register_path("eb-open-verse-block/eb-open-verse-block", EB_OPEN_VERSE_BLOCK_ADMIN_PATH),
+			EB_Open_Verse_Helper::get_block_register_path("eb-open-verse-block/eb-open-verse-block", EB_OPEN_VERSE_BLOCK_ADMIN_PATH),
 			array(
 				'editor_script'	=> 'create-block-eb-open-verse-block-editor-script',
 				'editor_style' 	=> 'create-block-eb-open-verse-block-editor-style',
