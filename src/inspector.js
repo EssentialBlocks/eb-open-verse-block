@@ -256,14 +256,14 @@ function Inspector(props) {
               {tab.name === "general" && (
                 <>
                   <PanelBody
-                    title={__("General", "eb-openverse-block")}
+                    title={__("General", "eb-open-verse-block")}
                     initialOpen={true}
                   >
                     <SelectControl
-                      label={__("Styles", "eb-openverse-block")}
+                      label={__("Styles", "eb-open-verse-block")}
                       description={__(
                         "Border won't work",
-                        "eb-openverse-block"
+                        "eb-open-verse-block"
                       )}
                       value={stylePreset}
                       options={STYLES}
@@ -279,7 +279,7 @@ function Inspector(props) {
                     )}
 
                     <ResponsiveRangeController
-                      baseLabel={__("Width", "eb-openverse-block")}
+                      baseLabel={__("Width", "eb-open-verse-block")}
                       controlName={IMAGE_WIDTH}
                       resRequiredProps={resRequiredProps}
                       min={1}
@@ -289,7 +289,7 @@ function Inspector(props) {
                     />
 
                     <ResponsiveRangeController
-                      baseLabel={__("Height", "eb-openverse-block")}
+                      baseLabel={__("Height", "eb-open-verse-block")}
                       controlName={IMAGE_HEIGHT}
                       resRequiredProps={resRequiredProps}
                       min={0}
@@ -299,27 +299,27 @@ function Inspector(props) {
                     />
 
                     <ToggleControl
-                      label={__("Auto Fit Image?", "eb-openverse-block")}
+                      label={__("Auto Fit Image?", "eb-open-verse-block")}
                       checked={autoFit}
                       onChange={(autoFit) => setAttributes({ autoFit })}
                     />
 
                     <SelectControl
-                      label={__("Hover Effect", "eb-openverse-block")}
+                      label={__("Hover Effect", "eb-open-verse-block")}
                       value={hoverEffect}
                       options={HOVER_EFFECT}
                       onChange={(hoverEffect) => setAttributes({ hoverEffect })}
                     />
 
                     <ToggleControl
-                      label={__("Display Attribution", "eb-openverse-block")}
+                      label={__("Display Attribution", "eb-open-verse-block")}
                       checked={displayAttribution}
                       onChange={() => checkAttribution(!displayAttribution)}
                     />
 
                     {displayAttribution && (
                       <SelectControl
-                        label={__("Attribution Styles", "eb-openverse-block")}
+                        label={__("Attribution Styles", "eb-open-verse-block")}
                         value={attributionStyle}
                         options={ATTRIBUTION_STYLES}
                         onChange={(attributionStyle) =>
@@ -333,12 +333,12 @@ function Inspector(props) {
 
               {tab.name === "styles" && (
                 <>
-                  <PanelBody title={__("Image Settings", "eb-openverse-block")}>
+                  <PanelBody title={__("Image Settings", "eb-open-verse-block")}>
                     {!complexStyle && (
                       <>
                         <BaseControl>
                           <h3 className="eb-control-title">
-                            {__("Border", "eb-openverse-block")}
+                            {__("Border", "eb-open-verse-block")}
                           </h3>
                         </BaseControl>
                         <BorderShadowControl
@@ -361,10 +361,10 @@ function Inspector(props) {
 
                   {displayAttribution && (
                     <PanelBody
-                      title={__("Caption Styles", "eb-openverse-block")}
+                      title={__("Caption Styles", "eb-open-verse-block")}
                     >
                       <PanelColorSettings
-                        title={__("Color Controls", "eb-openverse-block")}
+                        title={__("Color Controls", "eb-open-verse-block")}
                         className={"eb-subpanel"}
                         initialOpen={true}
                         disableAlpha={false}
@@ -373,19 +373,19 @@ function Inspector(props) {
                             value: attributionColor,
                             onChange: (newColor) =>
                               setAttributes({ attributionColor: newColor }),
-                            label: __("Text Color", "eb-openverse-block"),
+                            label: __("Text Color", "eb-open-verse-block"),
                           },
                         ]}
                       />
 
                       <TypographyDropdown
-                        baseLabel={__("Typography", "eb-openverse-block")}
+                        baseLabel={__("Typography", "eb-open-verse-block")}
                         typographyPrefixConstant={ATTRIBUTION_TYPOGRAPHY}
                         resRequiredProps={resRequiredProps}
                       />
 
                       <ResponsiveRangeController
-                        baseLabel={__("Width", "eb-openverse-block")}
+                        baseLabel={__("Width", "eb-open-verse-block")}
                         controlName={ATTRIBUTION_WIDTH}
                         resRequiredProps={resRequiredProps}
                         units={UNIT_TYPES}
@@ -397,7 +397,7 @@ function Inspector(props) {
                       {displayAttribution && (
                         <>
                           <BaseControl
-                            label={__("Text Align", "eb-openverse-block")}
+                            label={__("Text Align", "eb-open-verse-block")}
                           >
                             <ButtonGroup>
                               {TEXT_ALIGN.map((item) => (
@@ -448,7 +448,7 @@ function Inspector(props) {
                     />
                   </PanelBody>
                   <PanelBody
-                    title={__("Background", "eb-openverse-block")}
+                    title={__("Background", "eb-open-verse-block")}
                     initialOpen={false}
                   >
                     <BackgroundControl

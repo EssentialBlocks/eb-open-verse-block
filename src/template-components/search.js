@@ -26,13 +26,13 @@ export default function Search(props) {
 				name="search-form"
 				id="search-form"
 				class="openverse-search-input"
-				placeholder={__("Search for...", "eb-openverse-block")}
+				placeholder={__("Search for...", "eb-open-verse-block")}
 				value={q}
 				onChange={(e) => setQ(e.target.value)}
 				onKeyPress={handleKeyPress}
 			/>
 			<button className="openverse-search-btn" onClick={handleSearch}>
-				{__("Search", "eb-openverse-block")}
+				{__("Search", "eb-open-verse-block")}
 			</button>
 		</div>
 	);

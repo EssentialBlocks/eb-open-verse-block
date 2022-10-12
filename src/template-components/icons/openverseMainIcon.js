@@ -38,7 +38,7 @@ export const OpenverseMainIcon = (props) => {
 					></path>
 				</g>
 			</svg>
-			{__("Openverse", "eb-openverse-block")}
+			{__("Openverse", "eb-open-verse-block")}
 		</>
 	);
 };
