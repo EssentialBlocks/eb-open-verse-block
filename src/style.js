@@ -195,7 +195,7 @@ export default function Style(props) {
   const openversePopup = `
 	.eb-openverse-grid {
 		display: grid;
-		grid-template-columns: repeat(6, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 		gap: 10px;
 		align-items: stretch;
    }
@@ -204,9 +204,13 @@ export default function Style(props) {
 		border: 3px solid transparent;
    }
 
+   .eb_openverse_item_thumbnail {
+		height: 100%;
+   }
+
    .eb_openverse_item_thumbnail img {
 		max-width: 100%;
-		height: 100px;
+		object-fit: cover;
    }
 	.eb-openverse-grid .eb-openverse-grid-item.selected {
 		border-color: #007cba;
