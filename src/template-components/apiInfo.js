@@ -60,13 +60,13 @@ export const ApiInfo = (props) => {
 		data.append("action", "eb_get_registration");
 		data.append(
 			"openverse_reg_nonce",
-			EssentialBlocksLocalize.openverse_reg_nonce
+			EBOpenVerseLocalize.openverse_reg_nonce
 		);
 		// search
 		data.append("openverseEmail", apiInfo.email);
 		data.append("openverseName", apiInfo.name);
 
-		fetch(EssentialBlocksLocalize.ajax_url, {
+		fetch(EBOpenVerseLocalize.ajax_url, {
 			method: "POST",
 			body: data,
 		}) // wrapped
@@ -84,10 +84,10 @@ export const ApiInfo = (props) => {
 					apiData.append("action", "eb_openverse_token");
 					apiData.append(
 						"openverse_auth_nonce",
-						EssentialBlocksLocalize.openverse_auth_nonce
+						EBOpenVerseLocalize.openverse_auth_nonce
 					);
 
-					return fetch(EssentialBlocksLocalize.ajax_url, {
+					return fetch(EBOpenVerseLocalize.ajax_url, {
 						method: "POST",
 						body: apiData,
 					});

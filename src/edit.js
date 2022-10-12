@@ -109,13 +109,15 @@ export default function Edit(props) {
     //Get Openverse Email, Name
     let data = new FormData();
     data.append("action", "openverse_email_name_DB");
-    data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
-    fetch(EssentialBlocksLocalize.ajax_url, {
+    data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
+    fetch(EBOpenVerseLocalize.ajax_url, {
       method: "POST",
       body: data,
     }) // wrapped
       .then((res) => res.text())
       .then((data) => {
+        // console.log("data", data);
+
         const response = JSON.parse(data);
 
         if (response.success && response.data) {
@@ -142,7 +144,7 @@ export default function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -154,7 +156,7 @@ export default function Edit(props) {
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
 
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data,
       }) // wrapped
@@ -211,7 +213,7 @@ export default function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -223,7 +225,7 @@ export default function Edit(props) {
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
 
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data,
       }) // wrapped
@@ -258,8 +260,6 @@ export default function Edit(props) {
         .catch((err) => console.log(err));
     }
   }, [pagination]);
-
-  console.log('attributes', attributes)
 
   return (
     <>

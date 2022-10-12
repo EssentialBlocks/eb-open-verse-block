@@ -195,12 +195,12 @@ export default function SeachModal(props) {
       data.append("action", "eb_get_item");
       data.append(
         "openverse_item_nonce",
-        EssentialBlocksLocalize.openverse_item_nonce
+        EBOpenVerseLocalize.openverse_item_nonce
       );
 
       data.append("image_url", selectItem.url);
 
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data,
       }) // wrapped

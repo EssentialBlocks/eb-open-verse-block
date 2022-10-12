@@ -59,6 +59,9 @@ class EB_Open_Verse_Helper
             wp_localize_script('eb-open-verse-block-controls-util', 'EssentialBlocksLocalize', array(
                 'eb_wp_version' => (float) get_bloginfo('version'),
                 'rest_rootURL' => get_rest_url(),
+            ));
+
+            wp_localize_script('eb-open-verse-block-controls-util', 'EBOpenVerseLocalize', array(
                 'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'openverse_nonce' => wp_create_nonce('eb-openverse-nonce'),
                 'openverse_item_nonce' => wp_create_nonce('eb-openverse-item-nonce'),

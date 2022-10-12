@@ -627,12 +627,14 @@ function Edit(props) {
     //Get Openverse Email, Name
     let data = new FormData();
     data.append("action", "openverse_email_name_DB");
-    data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
-    fetch(EssentialBlocksLocalize.ajax_url, {
+    data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
+    fetch(EBOpenVerseLocalize.ajax_url, {
       method: "POST",
       body: data
     }) // wrapped
     .then(res => res.text()).then(data => {
+      // console.log("data", data);
+
       const response = JSON.parse(data);
       if (response.success && response.data) {
         if (response.data.client_id) {
@@ -656,7 +658,7 @@ function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -667,7 +669,7 @@ function Edit(props) {
       data.append("openverseFilterRatio", filterData.aspectRatio);
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data
       }) // wrapped
@@ -715,7 +717,7 @@ function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -726,7 +728,7 @@ function Edit(props) {
       data.append("openverseFilterRatio", filterData.aspectRatio);
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data
       }) // wrapped
@@ -753,7 +755,6 @@ function Edit(props) {
       }).catch(err => console.log(err));
     }
   }, [pagination]);
-  console.log('attributes', attributes);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isSelected && imageurl && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_inspector__WEBPACK_IMPORTED_MODULE_6__["default"], props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockAlignmentToolbar, {
     value: imageAlign,
     onChange: newAlign => setimageAlign(newAlign),
@@ -2087,11 +2088,11 @@ const ApiInfo = props => {
     setLoadingApi(true);
     let data = new FormData();
     data.append("action", "eb_get_registration");
-    data.append("openverse_reg_nonce", EssentialBlocksLocalize.openverse_reg_nonce);
+    data.append("openverse_reg_nonce", EBOpenVerseLocalize.openverse_reg_nonce);
     // search
     data.append("openverseEmail", apiInfo.email);
     data.append("openverseName", apiInfo.name);
-    fetch(EssentialBlocksLocalize.ajax_url, {
+    fetch(EBOpenVerseLocalize.ajax_url, {
       method: "POST",
       body: data
     }) // wrapped
@@ -2104,8 +2105,8 @@ const ApiInfo = props => {
         });
         let apiData = new FormData();
         apiData.append("action", "eb_openverse_token");
-        apiData.append("openverse_auth_nonce", EssentialBlocksLocalize.openverse_auth_nonce);
-        return fetch(EssentialBlocksLocalize.ajax_url, {
+        apiData.append("openverse_auth_nonce", EBOpenVerseLocalize.openverse_auth_nonce);
+        return fetch(EBOpenVerseLocalize.ajax_url, {
           method: "POST",
           body: apiData
         });
@@ -4949,9 +4950,9 @@ function SeachModal(props) {
     if (selectItem) {
       let data = new FormData();
       data.append("action", "eb_get_item");
-      data.append("openverse_item_nonce", EssentialBlocksLocalize.openverse_item_nonce);
+      data.append("openverse_item_nonce", EBOpenVerseLocalize.openverse_item_nonce);
       data.append("image_url", selectItem.url);
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data
       }) // wrapped
