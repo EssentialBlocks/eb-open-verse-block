@@ -30,7 +30,7 @@ export default function DisplayImage(props) {
 						{/* // creator */}
 						{imageAttr.creator && (
 							<span>
-								{__(" By ", "eb-openverse-block")}
+								{__(" By ", "eb-open-verse-block")}
 
 								{imageAttr.creatorUrl && (
 									<a
@@ -47,11 +47,11 @@ export default function DisplayImage(props) {
 						{/* // licensed */}
 						{imageAttr.creator && (
 							<span>
-								{__(" By ", "eb-openverse-block")}
+								{__(" By ", "eb-open-verse-block")}
 
 								{imageAttr.licenseUrl && (
 									<>
-										{__(" is licensed under ", "eb-openverse-block")}
+										{__(" is licensed under ", "eb-open-verse-block")}
 										<a
 											target="_blank"
 											rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function DisplayImage(props) {
 								{!imageAttr.licenseUrl &&
 									imageAttr.license + " " + imageAttr.licenseVersion}
 
-								{__(" .", "eb-openverse-block")}
+								{__(" .", "eb-open-verse-block")}
 							</span>
 						)}
 					</div>

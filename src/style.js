@@ -195,7 +195,7 @@ export default function Style(props) {
   const openversePopup = `
 	.eb-openverse-grid {
 		display: grid;
-		grid-template-columns: repeat(6, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 		gap: 10px;
 		align-items: stretch;
    }
@@ -204,9 +204,13 @@ export default function Style(props) {
 		border: 3px solid transparent;
    }
 
+   .eb_openverse_item_thumbnail {
+		height: 100%;
+   }
+
    .eb_openverse_item_thumbnail img {
 		max-width: 100%;
-		height: 100px;
+		object-fit: cover;
    }
 	.eb-openverse-grid .eb-openverse-grid-item.selected {
 		border-color: #007cba;
@@ -264,9 +268,10 @@ export default function Style(props) {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 30px;
+		height: 60px;
 		z-index: 200;
 		padding: 15px;
+		box-sizing: border-box;
    }
 	.title-section {
 		padding: 0;
@@ -310,8 +315,9 @@ export default function Style(props) {
 		left: 0;
 		right: 0;
 		z-index: 100;
-		height: 45px;
+		height: 75px;
 		padding: 15px;
+		box-sizing: border-box;
 		border: 0 solid #dcdcde;
 		overflow: hidden;
 		border-bottom: 1px solid #dcdcde;
@@ -351,8 +357,9 @@ export default function Style(props) {
 		left: 0;
 		right: 0;
 		z-index: 100;
-		height: 30px;
+		height: 61px;
 		padding: 15px;
+		box-sizing: border-box;
 		border-top: 1px solid #dcdcde;
 		text-align: right;
    }

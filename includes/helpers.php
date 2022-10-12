@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class EB_Openverse_Helper
+class EB_Open_Verse_Helper
 {
 
     private static $instance;
@@ -47,18 +47,21 @@ class EB_Openverse_Helper
          */
         if ($pagenow == 'post-new.php' || $pagenow == 'post.php' || $pagenow == 'site-editor.php' || ($pagenow == 'themes.php' && !empty($_SERVER['QUERY_STRING']) && str_contains($_SERVER['QUERY_STRING'], 'gutenberg-edit-site'))) {
 
-            $controls_dependencies = include_once EB_OPENVERSE_BLOCK_ADMIN_PATH . '/dist/controls.asset.php';
+            $controls_dependencies = include_once EB_OPEN_VERSE_BLOCK_ADMIN_PATH . '/dist/controls.asset.php';
             wp_register_script(
-                "eb-openverse-block-controls-util",
-                EB_OPENVERSE_BLOCK_ADMIN_URL . 'dist/controls.js',
+                "eb-open-verse-block-controls-util",
+                EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'dist/controls.js',
                 array_merge($controls_dependencies['dependencies']),
                 $controls_dependencies['version'],
                 true
             );
 
-            wp_localize_script('eb-openverse-block-controls-util', 'EssentialBlocksLocalize', array(
+            wp_localize_script('eb-open-verse-block-controls-util', 'EssentialBlocksLocalize', array(
                 'eb_wp_version' => (float) get_bloginfo('version'),
                 'rest_rootURL' => get_rest_url(),
+            ));
+
+            wp_localize_script('eb-open-verse-block-controls-util', 'EBOpenVerseLocalize', array(
                 'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'openverse_nonce' => wp_create_nonce('eb-openverse-nonce'),
                 'openverse_item_nonce' => wp_create_nonce('eb-openverse-item-nonce'),
@@ -67,18 +70,18 @@ class EB_Openverse_Helper
             ));
 
             if ($pagenow == 'post-new.php' || $pagenow == 'post.php') {
-                wp_localize_script('eb-openverse-block-controls-util', 'eb_conditional_localize', array(
+                wp_localize_script('eb-open-verse-block-controls-util', 'eb_conditional_localize', array(
                     'editor_type' => 'edit-post'
                 ));
             } else if ($pagenow == 'site-editor.php' || $pagenow == 'themes.php') {
-                wp_localize_script('eb-openverse-block-controls-util', 'eb_conditional_localize', array(
+                wp_localize_script('eb-open-verse-block-controls-util', 'eb_conditional_localize', array(
                     'editor_type' => 'edit-site'
                 ));
             }
 
             wp_enqueue_style(
                 'essential-blocks-editor-css',
-                EB_OPENVERSE_BLOCK_ADMIN_URL . 'dist/controls.css',
+                EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'dist/controls.css',
                 array(),
                 $controls_dependencies['version'],
                 'all'
@@ -94,4 +97,4 @@ class EB_Openverse_Helper
         }
     }
 }
-EB_Openverse_Helper::register();
+EB_Open_Verse_Helper::register();

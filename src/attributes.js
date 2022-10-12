@@ -134,7 +134,13 @@ const attributes = {
 
   // margin padding attributes ⬇
   ...generateDimensionsAttributes(WRAPPER_MARGIN),
-  ...generateDimensionsAttributes(WRAPPER_PADDING),
+  ...generateDimensionsAttributes(WRAPPER_PADDING, {
+    top: 15,
+    bottom: 15,
+    right: 15,
+    left: 15,
+    isLinked: false,
+  }),
   ...generateDimensionsAttributes(ATTRIBUTION_MARGIN, {
     top: 0,
     bottom: 0,
@@ -143,10 +149,10 @@ const attributes = {
     isLinked: false,
   }),
   ...generateDimensionsAttributes(ATTRIBUTION_PADDING, {
-    top: 15,
-    bottom: 15,
-    right: 30,
-    left: 30,
+    top: 20,
+    bottom: 0,
+    right: 10,
+    left: 10,
     isLinked: false,
   }),
 

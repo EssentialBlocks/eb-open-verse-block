@@ -27,6 +27,7 @@ import DisplayImage from "./template-components/displayImage";
 import Search from "./template-components/search";
 import { OpenverseMainIcon } from "./template-components/icons/openverseMainIcon";
 import { ApiInfo } from "./template-components/apiInfo";
+import { isEmpty } from "lodash";
 
 export default function Edit(props) {
   const { attributes, setAttributes, className, clientId, isSelected } = props;
@@ -108,13 +109,15 @@ export default function Edit(props) {
     //Get Openverse Email, Name
     let data = new FormData();
     data.append("action", "openverse_email_name_DB");
-    data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
-    fetch(EssentialBlocksLocalize.ajax_url, {
+    data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
+    fetch(EBOpenVerseLocalize.ajax_url, {
       method: "POST",
       body: data,
     }) // wrapped
       .then((res) => res.text())
       .then((data) => {
+        // console.log("data", data);
+
         const response = JSON.parse(data);
 
         if (response.success && response.data) {
@@ -141,7 +144,7 @@ export default function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -153,7 +156,7 @@ export default function Edit(props) {
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
 
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data,
       }) // wrapped
@@ -199,7 +202,9 @@ export default function Edit(props) {
 
   // fetch
   useEffect(() => {
-    openverseDataFetch(true);
+    if (!isEmpty(q)) {
+      openverseDataFetch(true);
+    }
   }, [filterData]);
 
   // fetch pagination data
@@ -208,7 +213,7 @@ export default function Edit(props) {
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
-      data.append("openverse_nonce", EssentialBlocksLocalize.openverse_nonce);
+      data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
       data.append("openverseQ", q);
@@ -220,7 +225,7 @@ export default function Edit(props) {
       data.append("openverseFilterSize", filterData.size);
       data.append("openversePage", pagination);
 
-      fetch(EssentialBlocksLocalize.ajax_url, {
+      fetch(EBOpenVerseLocalize.ajax_url, {
         method: "POST",
         body: data,
       }) // wrapped
@@ -276,7 +281,7 @@ export default function Edit(props) {
               <Toolbar>
                 <ToolbarButton
                   className="components-toolbar__control"
-                  label={__("Replace Image", "eb-openverse-block")}
+                  label={__("Replace Image", "eb-open-verse-block")}
                   icon={edit}
                   onClick={() => setOpenverseModal(true)}
                 />
@@ -287,7 +292,9 @@ export default function Edit(props) {
 
         <div className={`eb-parent-wrapper eb-parent-${blockId} ${classHook}`}>
           <div
-            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect}`}
+            className={`eb-openverse-wrapper ${blockId} img-style-${stylePreset} ${attributionStyle} ${hoverEffect} ${
+              imageurl ? "" : "no-image"
+            }`}
             data-id={blockId}
           >
             {imageurl && <DisplayImage attributes={attributes}></DisplayImage>}
@@ -309,7 +316,7 @@ export default function Edit(props) {
                         <div className="openverse-placheholderbox__description">
                           {__(
                             "Provide your Email ID & unique project Name to get access to Openverse  using API, these are required field",
-                            "eb-openverse-block"
+                            "eb-open-verse-block"
                           )}
 
                           <span style={{ color: "#ff0000" }}>*</span>
@@ -332,13 +339,13 @@ export default function Edit(props) {
                         {openverseRegError.status &&
                           openverseRegError.type == "Success" && (
                             <div className="eb-alert eb-alert-success">
-                              <strong>Congratulations!</strong> You have
-                              generated a API. Please verify your Email
+                              <strong>Hurray!</strong> You have generated an API
+                              successfully! Please verify your email to enjoy
+                              uninterrupted access to Openverse
                               <span className="eb-alert-warning">
-                                Without verifying your email ID, you can get
-                                access to Openverse as anonymous & your
-                                searching limit will be 100 requests/day and 5
-                                requests/hr.
+                                Without verifying your email you can get access
+                                to Openverse as anonymous and your search limit
+                                will be 100 requests/ day and 5 requests/ hr.
                               </span>
                               {/* {openverseRegError.message} */}
                             </div>
@@ -346,7 +353,7 @@ export default function Edit(props) {
                         <div className="openverse-placheholderbox__description">
                           {__(
                             "Explore more than 600 million creative works",
-                            "eb-openverse-block"
+                            "eb-open-verse-block"
                           )}
                         </div>
 
