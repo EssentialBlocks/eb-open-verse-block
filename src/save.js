@@ -48,7 +48,7 @@ const save = ({ attributes }) => {
                   {/* // creator */}
                   {imageAttr.creator && (
                     <span>
-                      {__(" By ", "eb-open-verse-block")}
+                      {__(" By ", "eb-openverse-block")}
 
                       {imageAttr.creatorUrl && (
                         <a
@@ -65,11 +65,11 @@ const save = ({ attributes }) => {
                   {/* // licensed */}
                   {imageAttr.creator && (
                     <span>
-                      {__(" By ", "eb-open-verse-block")}
+                      {__(" By ", "eb-openverse-block")}
 
                       {imageAttr.licenseUrl && (
                         <>
-                          {__(" is licensed under ", "eb-open-verse-block")}
+                          {__(" is licensed under ", "eb-openverse-block")}
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const save = ({ attributes }) => {
                       {!imageAttr.licenseUrl &&
                         imageAttr.license + " " + imageAttr.licenseVersion}
 
-                      {__(" .", "eb-open-verse-block")}
+                      {__(" .", "eb-openverse-block")}
                     </span>
                   )}
                 </div>

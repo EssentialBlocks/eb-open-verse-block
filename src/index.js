@@ -13,12 +13,12 @@ const { name, category } = metadata;
 
 ebConditionalRegisterBlockType(metadata, {
 	keywords: [
-		__("Openverse", "eb-open-verse-block"),
-		__("Openverse block", "eb-open-verse-block"),
-		__("Openverse image", "eb-open-verse-block"),
-		__("EB Openverse block", "eb-open-verse-block"),
-		__("eb open verse block", "eb-open-verse-block"),
-		__("essential blocks", "eb-open-verse-block"),
+		__("Openverse", "eb-openverse-block"),
+		__("Openverse block", "eb-openverse-block"),
+		__("Openverse image", "eb-openverse-block"),
+		__("EB Openverse block", "eb-openverse-block"),
+		__("eb open verse block", "eb-openverse-block"),
+		__("essential blocks", "eb-openverse-block"),
 	],
 	icon: OpenverseIcon,
 	attributes,

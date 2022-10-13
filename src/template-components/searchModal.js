@@ -242,7 +242,7 @@ export default function SeachModal(props) {
       <div className="openverse-modal__inner">
         <div className="openverse-modal__header">
           <div className="title-section">
-            {__("Select Media", "eb-open-verse-block")}
+            {__("Select Media", "eb-openverse-block")}
           </div>
           <button className="close-btn" onClick={() => props.setTrigger(false)}>
             <span class="dashicons dashicons-no"></span>
@@ -259,7 +259,7 @@ export default function SeachModal(props) {
           <div className="search-result-section">
             <div className="search-content">
               <p className="search-key">
-                <span>{__("Search Key:", "eb-open-verse-block")} </span>
+                <span>{__("Search Key:", "eb-openverse-block")} </span>
                 {q}
               </p>
 
@@ -285,19 +285,19 @@ export default function SeachModal(props) {
               {totalPages > pagination && (
                 <button className="loadmore-btn" onClick={loadMore}>
                   {loading
-                    ? __("Loading ...", "eb-open-verse-block")
-                    : __("Load More", "eb-open-verse-block")}
+                    ? __("Loading ...", "eb-openverse-block")
+                    : __("Load More", "eb-openverse-block")}
 
                   {}
                 </button>
               )}
             </div>
             <div className="search-filter">
-              <h4>{__("FILTER BY", "eb-open-verse-block")}</h4>
+              <h4>{__("FILTER BY", "eb-openverse-block")}</h4>
 
               <form className="filters-form">
                 <div className="filter-item">
-                  <h5>{__("LICENSES", "eb-open-verse-block")}</h5>
+                  <h5>{__("LICENSES", "eb-openverse-block")}</h5>
                   {FILTER_LICENSES.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -321,7 +321,7 @@ export default function SeachModal(props) {
                 </div>
 
                 <div className="filter-item">
-                  <h5>{__("LICENSE TYPE", "eb-open-verse-block")}</h5>
+                  <h5>{__("LICENSE TYPE", "eb-openverse-block")}</h5>
                   {FILTER_LICENSE_TYPE.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -345,7 +345,7 @@ export default function SeachModal(props) {
                 </div>
 
                 <div className="filter-item">
-                  <h5>{__("Image Type", "eb-open-verse-block")}</h5>
+                  <h5>{__("Image Type", "eb-openverse-block")}</h5>
                   {FILTER_CATEGORY.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -369,7 +369,7 @@ export default function SeachModal(props) {
                 </div>
 
                 <div className="filter-item">
-                  <h5>{__("Extension", "eb-open-verse-block")}</h5>
+                  <h5>{__("Extension", "eb-openverse-block")}</h5>
                   {FILTER_EXTENSION.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -393,7 +393,7 @@ export default function SeachModal(props) {
                 </div>
 
                 <div className="filter-item">
-                  <h5>{__("Aspect ratio", "eb-open-verse-block")}</h5>
+                  <h5>{__("Aspect ratio", "eb-openverse-block")}</h5>
                   {FILTER_ASPECT_RATIO.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -417,7 +417,7 @@ export default function SeachModal(props) {
                 </div>
 
                 <div className="filter-item">
-                  <h5>{__("Image Size", "eb-open-verse-block")}</h5>
+                  <h5>{__("Image Size", "eb-openverse-block")}</h5>
                   {FILTER_SIZE.map(({ label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
@@ -450,7 +450,7 @@ export default function SeachModal(props) {
             disabled={!selectItem ? true : false}
             onClick={uploadImage}
           >
-            {__("Select", "eb-open-verse-block")}
+            {__("Select", "eb-openverse-block")}
           </button>
         </div>
       </div>

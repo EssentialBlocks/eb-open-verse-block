@@ -1,4 +1,4 @@
-=== EB Open Verse Block By Essential Blocks ===
+=== Essential Blocks' Openverse Block ===
 Contributors: wpdevteam, re_enter_rupok, Asif2BD, rahat89, sumaiyasiddika
 Tags: Free images, openverse, stock photos, image block, images, photos, Gutenberg image block, WordPress images, EB Open Verse
 Requires at least: 5.6
@@ -12,7 +12,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 
 == Description ==
 
-**EB Open Verse Block** helps you to add all amazing free stock photos, royalty free images, CC licensed images to your WordPress website in 1-click. Also, display images with attributes in an interactive manner using ready presets.
+**Essential Blocks' Openverse Block** helps you to add all amazing free stock photos, royalty free images, CC licensed images to your WordPress website in 1-click. Also, display images with attributes in an interactive manner using ready presets.
 
 **STUNNING FEATURES:**
 
@@ -23,7 +23,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 - Automatically add image attributes (original image author, image name, etc.) as image caption
 
 
-**Completely Customizable:** You can customize EB Open Verse Block just the way you want.
+**Completely Customizable:** You can customize Essential Blocks' Openverse Block just the way you want.
 
 **Super Light-weight:** No extra resources are used and it’s highly optimized for super fast loading & instant live editing.
 
@@ -37,8 +37,8 @@ This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team
 ## 👨‍💻 DOCUMENTATION AND SUPPORT ##
 
 - For documentation and tutorials go to our [documentation](https://essential-blocks.com/docs/)
-- To report issue and contribution visit [Github](https://github.com/EssentialBlocks/eb-open-verse-block).
-- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/eb-open-verse-block).
+- To report issue and contribution visit [Github](https://github.com/EssentialBlocks/eb-openverse-block).
+- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/eb-openverse-block).
 - For more information about features, FAQs and documentation, check out our website at [WPDeveloper](https://wpdeveloper.com/).
 
 ## 🙌 JOIN THE COMMUNITY ##
@@ -47,7 +47,7 @@ This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team
 
 🤝 Join our [Facebook Community](https://www.facebook.com/groups/wpdeveloper.net/) & get connected with expert web creators like yourself.
 
-🧡 LOVED EB Open Verse Block? Rate us on WordPress Repository
+🧡 LOVED Essential Blocks' Openverse Block? Rate us on WordPress Repository
 
 🔥 GET FREEBIES FOR YOUR WORDPRESS SITE
 
@@ -73,11 +73,11 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 = Modern Way: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For "EB Open Verse Block".
+2. Search For "Essential Blocks' Openverse Block".
 3. Install in 1-click
 
 = Old Way: =
-1. Upload `eb-open-verse-block` to the `/wp-content/plugins/` directory
+1. Upload `eb-openverse-block` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Follow the [Documentation](https://essential-blocks.com/docs/)
 

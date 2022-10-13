@@ -1,1 +1,1 @@
-# eb-open-verse-block
+# eb-openverse-block
