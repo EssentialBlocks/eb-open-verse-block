@@ -2,7 +2,7 @@
 
 defined('ABSPATH') || exit;
 
-class EB_OPENVERSE_Blocks_Api {
+class EB_Openverse_Blocks_Api {
 
 	/**
 	 * Get data for specific endpoints

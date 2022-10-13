@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class EB_OPENVERSE_Helper
+class EB_Openverse_Helper
 {
 
     private static $instance;
@@ -97,4 +97,4 @@ class EB_OPENVERSE_Helper
         }
     }
 }
-EB_OPENVERSE_Helper::register();
+EB_Openverse_Helper::register();
