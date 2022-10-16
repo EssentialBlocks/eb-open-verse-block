@@ -117,8 +117,6 @@ export default function Edit(props) {
     }) // wrapped
       .then((res) => res.text())
       .then((data) => {
-        // console.log("data", data);
-
         const response = JSON.parse(data);
 
         if (response.success && response.data) {
@@ -167,8 +165,6 @@ export default function Edit(props) {
 
           if (response.success) {
             const responseData = JSON.parse(response.data);
-
-            console.log(responseData.result_count);
 
             if (responseData.result_count == 0) {
               setOpenverseError({
