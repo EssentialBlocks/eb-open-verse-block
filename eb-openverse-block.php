@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:     Essential Blocks' Openverse Block
+ * Plugin Name:     EB Block for Openverse
  * Description:     Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website.
  * Version:         1.0.0
  * Author:          WPDeveloper
