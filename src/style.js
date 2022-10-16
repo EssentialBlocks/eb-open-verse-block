@@ -258,8 +258,8 @@ export default function Style(props) {
 		overflow: hidden;
 		position: relative;
         top: 25px;
-		left: -50px;
-		width: 60%;
+		left: -60px;
+		width: 72%;
 		height: 70vh;
 		background-color: #fff;
    }

@@ -1714,8 +1714,8 @@ function Style(props) {
 		overflow: hidden;
 		position: relative;
         top: 25px;
-		left: -50px;
-		width: 60%;
+		left: -60px;
+		width: 72%;
 		height: 70vh;
 		background-color: #fff;
    }
@@ -5530,7 +5530,7 @@ module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-ope
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkeb_open_verse_block"] = self["webpackChunkeb_open_verse_block"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkeb_openverse_block"] = self["webpackChunkeb_openverse_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
