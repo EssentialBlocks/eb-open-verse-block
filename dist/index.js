@@ -567,6 +567,7 @@ function Edit(props) {
   });
   const [showForm, setShowForm] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [openverseData, setOpenverseData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
+  const [openverseDataCount, setOpenverseDataCount] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
   const [loading, setLoading] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [openverseImage, setOpenverseImage] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   const [openverseError, setOpenverseError] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
@@ -677,6 +678,7 @@ function Edit(props) {
         const response = JSON.parse(data);
         if (response.success) {
           const responseData = JSON.parse(response.data);
+          console.log(responseData.result_count);
           if (responseData.result_count == 0) {
             setOpenverseError({
               status: true,
@@ -684,6 +686,7 @@ function Edit(props) {
             });
           } else {
             const passData = responseData.results;
+            setOpenverseDataCount(responseData.result_count);
             setOpenverseData(passData);
             setOpenverseError({
               status: false
@@ -824,7 +827,8 @@ function Edit(props) {
     totalPages: totalPages,
     openverseError: openverseError,
     setOpenverseModal: setOpenverseModal,
-    openverseDataFetch: openverseDataFetch
+    openverseDataFetch: openverseDataFetch,
+    openverseDataCount: openverseDataCount
   })))));
 }
 
@@ -1652,8 +1656,10 @@ function Style(props) {
 	.eb-openverse-grid {
 		display: grid;
 		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 10px;
 		align-items: stretch;
+		--size: calc(50vw / 4);
+		--gap: 10px;
+		gap: var(--gap);
    }
 	.eb-openverse-grid .eb-openverse-grid-item {
 		cursor: pointer;
@@ -1661,7 +1667,7 @@ function Style(props) {
    }
 
    .eb_openverse_item_thumbnail {
-		height: 100%;
+		height: calc(var(--size) - var(--gap));
    }
 
    .eb_openverse_item_thumbnail img {
@@ -4713,7 +4719,9 @@ function Search(props) {
     setOpenverseModal,
     q,
     componentClassName,
-    openverseDataFetch
+    openverseDataFetch,
+    openverseDataCount,
+    loading
   } = props;
   const handleKeyPress = event => {
     if (event.key === "Enter" && event.target.value.length != 0) {
@@ -4739,7 +4747,11 @@ function Search(props) {
     value: q,
     onChange: e => setQ(e.target.value),
     onKeyPress: handleKeyPress
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }), !loading && openverseDataCount > 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "search-result-count"
+  }, "Over ", openverseDataCount, " restults"), loading && openverseDataCount > 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "search-result-count"
+  }, "Loading ..."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "openverse-search-btn",
     onClick: handleSearch
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search", "eb-openverse-block")));
@@ -4792,7 +4804,8 @@ function SeachModal(props) {
     totalPages,
     openverseError,
     setOpenverseModal,
-    openverseDataFetch
+    openverseDataFetch,
+    openverseDataCount
   } = props;
   const handleChange = e => {
     // Destructuring
@@ -4978,9 +4991,11 @@ function SeachModal(props) {
     }
   };
   const [limit, setLimit] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(12);
+  const [loadmoreClick, setLoadmoreClick] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
 
   // load more
   const loadMore = () => {
+    setLoadmoreClick(true);
     if (pagination < totalPages) {
       setPagination(pagination => pagination + 1);
       setLimit(limit => limit + 12);
@@ -5006,6 +5021,8 @@ function SeachModal(props) {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_search__WEBPACK_IMPORTED_MODULE_4__["default"], {
     setOpenverseModal: setOpenverseModal,
     openverseDataFetch: openverseDataFetch,
+    openverseDataCount: openverseDataCount,
+    loading: loading,
     q: q,
     setQ: setQ,
     componentClassName: "search-section openverse-search-section"

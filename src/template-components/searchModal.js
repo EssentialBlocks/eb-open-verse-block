@@ -33,19 +33,14 @@ export default function SeachModal(props) {
     openverseError,
     setOpenverseModal,
     openverseDataFetch,
+    openverseDataCount,
   } = props;
 
   const handleChange = (e) => {
     // Destructuring
     const { value, checked, name } = e.target;
-    const {
-      licenses,
-      licenseType,
-      category,
-      extension,
-      aspectRatio,
-      size,
-    } = filterData;
+    const { licenses, licenseType, category, extension, aspectRatio, size } =
+      filterData;
 
     // Case 1 : The user checks the box
     if (checked) {
@@ -226,9 +221,11 @@ export default function SeachModal(props) {
   };
 
   const [limit, setLimit] = useState(12);
+  const [loadmoreClick, setLoadmoreClick] = useState(false);
 
   // load more
   const loadMore = () => {
+    setLoadmoreClick(true);
     if (pagination < totalPages) {
       setPagination((pagination) => pagination + 1);
       setLimit((limit) => limit + 12);
@@ -252,6 +249,8 @@ export default function SeachModal(props) {
           <Search
             setOpenverseModal={setOpenverseModal}
             openverseDataFetch={openverseDataFetch}
+            openverseDataCount={openverseDataCount}
+            loading={loading}
             q={q}
             setQ={setQ}
             componentClassName="search-section openverse-search-section"
@@ -264,6 +263,7 @@ export default function SeachModal(props) {
               </p>
 
               {loading && <Loading limit={limit} />}
+
               {!loading && (
                 <>
                   {openverseError.status && (

@@ -160,6 +160,14 @@
   max-width: 100%;
 }
 
+.search-result-count {
+  position: absolute;
+  right: 126px;
+  font-size: 12px;
+  top: 27px;
+  color: #797979;
+}
+
 .openverse-search-input:focus {
   box-shadow: inset 0px 0px 0 1px #2673ff !important;
 }
@@ -186,6 +194,10 @@
   min-width: 170px;
   flex-grow: 1;
   height: 50px;
+}
+
+.search-section .openverse-search-input {
+  padding-right: 130px !important;
 }
 
 .openverse-search-btn {
@@ -216,6 +228,9 @@
 }
 
 @media all and (max-width: 767px) {
+  .eb-openverse-grid {
+    --size: calc(70vw / 4) !important;
+  }
   .openverse-search-section {
     display: block;
   }
@@ -229,6 +244,20 @@
   .openverse-modal__inner {
     left: 0 !important;
     width: 90% !important;
+  }
+  .search-result-section {
+    display: block !important;
+  }
+  .search-filter,
+.search-result-count {
+    display: none;
+  }
+  .search-section .openverse-search-input,
+.search-section .openverse-search-btn {
+    width: auto;
+  }
+  .search-section .openverse-search-input {
+    padding-right: 10px !important;
   }
 }
 .api-info .openverse-input {
