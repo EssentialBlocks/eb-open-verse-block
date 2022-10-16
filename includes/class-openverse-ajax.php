@@ -5,7 +5,7 @@
  *
  * AJAX Event Handler
  *
- * @class    EB_Open_Verse_Block_Ajax
+ * @class    EB_Openverse_Block_Ajax
  * @version  3.6.0
  * @package  admin/frontend
  * @category Class
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class EB_Open_Verse_Block_Ajax
+class EB_Openverse_Block_Ajax
 {
     private static $instance;
 
@@ -77,7 +77,7 @@ class EB_Open_Verse_Block_Ajax
         $url = "https://api.openverse.engineering/v1/auth_tokens/register/";
 
         
-        $response = EB_Open_Verse_Blocks_Api::post(
+        $response = EB_Openverse_Blocks_Api::post(
             $url,
             array(
                 'name' => $name,
@@ -85,7 +85,7 @@ class EB_Open_Verse_Block_Ajax
                 'description' => '1234xyzv',
                 'email' => $email,
             ),
-            EB_Open_Verse_Blocks_Api::makeRequestHeader(array(
+            EB_Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'application/json',
             )),
             array(
@@ -147,14 +147,14 @@ class EB_Open_Verse_Block_Ajax
         // Registration for client id and client secret
         $url = "https://api.openverse.engineering/v1/auth_tokens/token/";
 
-        $response = EB_Open_Verse_Blocks_Api::post(
+        $response = EB_Openverse_Blocks_Api::post(
             $url,
             array(
                 'client_id' => $client_id,
                 'client_secret' => $client_secret,
                 'grant_type' => 'client_credentials',
             ),
-            EB_Open_Verse_Blocks_Api::makeRequestHeader(array(
+            EB_Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'multipart/form-data',
             )),
             array(
@@ -178,7 +178,7 @@ class EB_Open_Verse_Block_Ajax
     public static function eb_generate_openverse_token()
     {
        
-        $response = EB_Open_Verse_Block_Ajax::eb_generate_openverse_token_callback();
+        $response = EB_Openverse_Block_Ajax::eb_generate_openverse_token_callback();
 
         wp_send_json($response);
         
@@ -197,7 +197,7 @@ class EB_Open_Verse_Block_Ajax
         $token = get_transient('eb_openverse_token');
 
         if (empty($token)){
-            $token_info = EB_Open_Verse_Block_Ajax::eb_generate_openverse_token_callback();
+            $token_info = EB_Openverse_Block_Ajax::eb_generate_openverse_token_callback();
             $token = $token_info['access_token'];
         }
         
@@ -218,10 +218,10 @@ class EB_Open_Verse_Block_Ajax
         );
         $param = array_merge($param, $values);
 
-        $response = EB_Open_Verse_Blocks_Api::get(
+        $response = EB_Openverse_Blocks_Api::get(
             $url,
             $param,
-            EB_Open_Verse_Blocks_Api::makeRequestHeader(array(
+            EB_Openverse_Blocks_Api::makeRequestHeader(array(
                 'Content-Type' => 'application/json',
                 'X-API-KEY' => $token,
             )),
@@ -363,4 +363,4 @@ class EB_Open_Verse_Block_Ajax
     }
 }
 
-EB_Open_Verse_Block_Ajax::init();
+EB_Openverse_Block_Ajax::init();

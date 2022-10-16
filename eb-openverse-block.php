@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Plugin Name:     EB Open Verse Block
+ * Plugin Name:     Essential Blocks' Openverse Block
  * Description:     Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website.
  * Version:         1.0.0
  * Author:          WPDeveloper
  * Author URI:      https://wpdeveloper.net
  * License:         GPL-3.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain:     eb-open-verse-block
+ * Text Domain:     eb-openverse-block
  *
- * @package         eb-open-verse-block
+ * @package         eb-openverse-block
  */
 
 /**
@@ -27,82 +27,82 @@ require_once __DIR__ . '/lib/style-handler-inline/style-handler-inline.php';
 require_once __DIR__ . '/includes/api-class.php';
 require_once __DIR__ . '/includes/class-openverse-ajax.php';
 
-function create_block_EB_OPEN_VERSE_BLOCK_init()
+function create_block_EB_OPENVERSE_BLOCK_init()
 {
-	define('EB_OPEN_VERSE_BLOCK_VERSION', "1.0.0");
-	define('EB_OPEN_VERSE_BLOCK_ADMIN_URL', plugin_dir_url(__FILE__));
-	define('EB_OPEN_VERSE_BLOCK_ADMIN_PATH', dirname(__FILE__));
+	define('EB_OPENVERSE_BLOCK_VERSION', "1.0.0");
+	define('EB_OPENVERSE_BLOCK_ADMIN_URL', plugin_dir_url(__FILE__));
+	define('EB_OPENVERSE_BLOCK_ADMIN_PATH', dirname(__FILE__));
 
-	$script_asset_path = EB_OPEN_VERSE_BLOCK_ADMIN_PATH . "/dist/index.asset.php";
+	$script_asset_path = EB_OPENVERSE_BLOCK_ADMIN_PATH . "/dist/index.asset.php";
 	if (!file_exists($script_asset_path)) {
 		throw new Error(
 			'You need to run `npm start` or `npm run build` for the "block/testimonial" block first.'
 		);
 	}
-	$index_js     = EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'dist/index.js';
+	$index_js     = EB_OPENVERSE_BLOCK_ADMIN_URL . 'dist/index.js';
 	$script_asset = require($script_asset_path);
 	$all_dependencies = array_merge($script_asset['dependencies'], array(
 		'wp-blocks',
 		'wp-i18n',
 		'wp-element',
 		'wp-block-editor',
-		'eb-open-verse-block-controls-util',
+		'eb-openverse-block-controls-util',
 		'essential-blocks-eb-animation'
 	));
 
 	wp_register_script(
-		'create-block-eb-open-verse-block-editor-script',
+		'create-block-eb-openverse-block-editor-script',
 		$index_js,
 		$all_dependencies,
 		$script_asset['version'],
 		true
 	);
 
-	$load_animation_js = EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'lib/resources/js/eb-animation-load.js';
+	$load_animation_js = EB_OPENVERSE_BLOCK_ADMIN_URL . 'lib/resources/js/eb-animation-load.js';
 	wp_register_script(
 		'essential-blocks-eb-animation',
 		$load_animation_js,
 		array(),
-		EB_OPEN_VERSE_BLOCK_VERSION,
+		EB_OPENVERSE_BLOCK_VERSION,
 		true
 	);
 
-	$fontawesome_css = EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'lib/resources/css/font-awesome5.css';
+	$fontawesome_css = EB_OPENVERSE_BLOCK_ADMIN_URL . 'lib/resources/css/font-awesome5.css';
 	wp_register_style(
 		'fontawesome-frontend-css',
 		$fontawesome_css,
 		array(),
-		EB_OPEN_VERSE_BLOCK_VERSION
+		EB_OPENVERSE_BLOCK_VERSION
 	);
 
 	wp_register_style(
 		'fontpicker-default-theme',
-		EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'lib/resources/css/fonticonpicker.base-theme.react.css',
+		EB_OPENVERSE_BLOCK_ADMIN_URL . 'lib/resources/css/fonticonpicker.base-theme.react.css',
 		array(),
-		EB_OPEN_VERSE_BLOCK_VERSION,
+		EB_OPENVERSE_BLOCK_VERSION,
 		'all'
 	);
 
 	wp_register_style(
 		'fontpicker-material-theme',
-		EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'lib/resources/css/fonticonpicker.material-theme.react.css',
+		EB_OPENVERSE_BLOCK_ADMIN_URL . 'lib/resources/css/fonticonpicker.material-theme.react.css',
 		array(),
-		EB_OPEN_VERSE_BLOCK_VERSION,
+		EB_OPENVERSE_BLOCK_VERSION,
 		'all'
 	);
 
-	$animate_css = EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'lib/resources/css/animate.min.css';
+	$animate_css = EB_OPENVERSE_BLOCK_ADMIN_URL . 'lib/resources/css/animate.min.css';
 	wp_register_style(
 		'essential-blocks-animation',
 		$animate_css,
 		array(),
-		EB_OPEN_VERSE_BLOCK_VERSION
+		EB_OPENVERSE_BLOCK_VERSION
 	);
 
-	$style_css = EB_OPEN_VERSE_BLOCK_ADMIN_URL . 'dist/style.css';
+	$style_css = EB_OPENVERSE_BLOCK_ADMIN_URL . 'dist/style.css';
 	//Editor Style
 	wp_register_style(
-		'create-block-eb-open-verse-block-editor-style',
+		'create-block-eb-openverse-block-editor-style',
 		$style_css,
 		array(
 			'fontawesome-frontend-css',
@@ -110,30 +110,30 @@ function create_block_EB_OPEN_VERSE_BLOCK_init()
 			'fontpicker-material-theme',
 			'essential-blocks-animation'
 		),
-		EB_OPEN_VERSE_BLOCK_VERSION
+		EB_OPENVERSE_BLOCK_VERSION
 	);
 
 
 	//Frontend Style
 	wp_register_style(
-		'create-block-eb-open-verse-block-frontend-style',
+		'create-block-eb-openverse-block-frontend-style',
 		$style_css,
 		array(
 			'fontawesome-frontend-css',
 			'essential-blocks-animation'
 		),
-		EB_OPEN_VERSE_BLOCK_VERSION
+		EB_OPENVERSE_BLOCK_VERSION
 	);
 
 	if (!WP_Block_Type_Registry::get_instance()->is_registered('essential-blocks/openverse')) {
 		register_block_type(
-			EB_Open_Verse_Helper::get_block_register_path("eb-open-verse-block/eb-open-verse-block", EB_OPEN_VERSE_BLOCK_ADMIN_PATH),
+			EB_Openverse_Helper::get_block_register_path("eb-openverse-block/eb-openverse-block", EB_OPENVERSE_BLOCK_ADMIN_PATH),
 			array(
-				'editor_script'	=> 'create-block-eb-open-verse-block-editor-script',
-				'editor_style' 	=> 'create-block-eb-open-verse-block-editor-style',
+				'editor_script'	=> 'create-block-eb-openverse-block-editor-script',
+				'editor_style' 	=> 'create-block-eb-openverse-block-editor-style',
 				'render_callback' => function ($attributes, $content) {
 					if (!is_admin()) {
-						wp_enqueue_style('create-block-eb-open-verse-block-frontend-style');
+						wp_enqueue_style('create-block-eb-openverse-block-frontend-style');
 						wp_enqueue_script('essential-blocks-eb-animation');
 					}
 					return $content;
@@ -142,4 +142,4 @@ function create_block_EB_OPEN_VERSE_BLOCK_init()
 		);
 	}
 }
-add_action('init', 'create_block_EB_OPEN_VERSE_BLOCK_init', 99);
+add_action('init', 'create_block_EB_OPENVERSE_BLOCK_init', 99);

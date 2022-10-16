@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class EB_Open_Verse_Post_Meta
+class EB_Openverse_Post_Meta
 {
     public function __construct()
     {
@@ -39,4 +39,4 @@ class EB_Open_Verse_Post_Meta
     }
 }
 
-new EB_Open_Verse_Post_Meta();
+new EB_Openverse_Post_Meta();

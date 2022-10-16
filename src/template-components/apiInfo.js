@@ -117,7 +117,7 @@ export const ApiInfo = (props) => {
 				name="mail-form"
 				id="mail-form"
 				class="openverse-input"
-				placeholder={__("user@example.com", "eb-open-verse-block")}
+				placeholder={__("user@example.com", "eb-openverse-block")}
 				defaultValue={!apiInfo.email ? "" : apiInfo.email}
 				onChange={(e) => handleEmailChange(e)}
 			/>
@@ -129,7 +129,7 @@ export const ApiInfo = (props) => {
 				type="text"
 				id="name"
 				className="openverse-input"
-				placeholder={__("My amazing project", "eb-open-verse-block")}
+				placeholder={__("My amazing project", "eb-openverse-block")}
 				defaultValue={!apiInfo.name ? "" : apiInfo.name}
 				onChange={(e) => handleNameChange(e)}
 			/>
@@ -143,8 +143,8 @@ export const ApiInfo = (props) => {
 				onClick={generateAPI}
 			>
 				{loadingApi
-					? __("Generating ........", "eb-open-verse-block")
-					: __("Generate API", "eb-open-verse-block")}
+					? __("Generating ........", "eb-openverse-block")
+					: __("Generate API", "eb-openverse-block")}
 			</button>
 		</div>
 	);
