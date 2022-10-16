@@ -51,6 +51,7 @@ export default function Edit(props) {
   const [showForm, setShowForm] = useState(false);
 
   const [openverseData, setOpenverseData] = useState([]);
+  const [openverseDataCount, setOpenverseDataCount] = useState(0);
   const [loading, setLoading] = useState(true);
   const [openverseImage, setOpenverseImage] = useState("");
   const [openverseError, setOpenverseError] = useState({
@@ -167,6 +168,8 @@ export default function Edit(props) {
           if (response.success) {
             const responseData = JSON.parse(response.data);
 
+            console.log(responseData.result_count);
+
             if (responseData.result_count == 0) {
               setOpenverseError({
                 status: true,
@@ -174,6 +177,7 @@ export default function Edit(props) {
               });
             } else {
               const passData = responseData.results;
+              setOpenverseDataCount(responseData.result_count);
               setOpenverseData(passData);
               setOpenverseError({
                 status: false,
@@ -397,6 +401,7 @@ export default function Edit(props) {
               openverseError={openverseError}
               setOpenverseModal={setOpenverseModal}
               openverseDataFetch={openverseDataFetch}
+              openverseDataCount={openverseDataCount}
             ></SeachModal>
           </div>
         </div>

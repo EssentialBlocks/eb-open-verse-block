@@ -196,8 +196,10 @@ export default function Style(props) {
 	.eb-openverse-grid {
 		display: grid;
 		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 10px;
 		align-items: stretch;
+		--size: calc(50vw / 4);
+		--gap: 10px;
+		gap: var(--gap);
    }
 	.eb-openverse-grid .eb-openverse-grid-item {
 		cursor: pointer;
@@ -205,7 +207,7 @@ export default function Style(props) {
    }
 
    .eb_openverse_item_thumbnail {
-		height: 100%;
+		height: calc(var(--size) - var(--gap));
    }
 
    .eb_openverse_item_thumbnail img {
