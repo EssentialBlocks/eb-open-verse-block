@@ -21,8 +21,8 @@ export default function SeachModal(props) {
     loading,
     setLoading,
     openverseData,
-    q,
-    setQ,
+    // q,
+    // setQ,
     filterData,
     setFilterData,
     setOpenverseImage,
@@ -36,6 +36,8 @@ export default function SeachModal(props) {
     openverseDataFetch,
     openverseDataCount,
   } = props;
+
+  const { searchQ } = attributes;
 
   const handleChange = (e) => {
     // Destructuring
@@ -252,15 +254,17 @@ export default function SeachModal(props) {
             openverseDataFetch={openverseDataFetch}
             openverseDataCount={openverseDataCount}
             loading={loading}
-            q={q}
-            setQ={setQ}
+            // q={q}
+            // setQ={setQ}
+            searchQ={searchQ}
+            setAttributes={setAttributes}
             componentClassName="search-section openverse-search-section"
           ></Search>
           <div className="search-result-section">
             <div className="search-content">
               <p className="search-key">
                 <span>{__("Search Key:", "eb-openverse-block")} </span>
-                {q}
+                {searchQ}
               </p>
 
               {console.log("loading: ", loading)}
@@ -297,7 +301,7 @@ export default function SeachModal(props) {
               <form className="filters-form">
                 <div className="filter-item">
                   <h5>{__("LICENSES", "eb-openverse-block")}</h5>
-                  {FILTER_LICENSES.map(({ label, value }, index) => {
+                  {FILTER_LICENSES.map(({ icon, label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
                         <input
@@ -308,10 +312,12 @@ export default function SeachModal(props) {
                           id={`licenses-${index}`}
                           onChange={handleChange}
                         />
+
                         <label
                           className="form-check-label"
                           htmlFor={`licenses-${index}`}
                         >
+                          {icon.map((item) => item)}
                           {label}
                         </label>
                       </div>

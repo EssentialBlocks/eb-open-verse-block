@@ -2,25 +2,30 @@ import { __ } from "@wordpress/i18n";
 
 export default function Search(props) {
   const {
-    setQ,
+    // setQ,
+    // q,
     setOpenverseModal,
-    q,
     componentClassName,
     openverseDataFetch,
     openverseDataCount,
     loading,
+    searchQ,
+    setAttributes,
   } = props;
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter" && event.target.value.length != 0) {
-      setQ(event.target.value);
+      setAttributes({
+        searchQ: event.target.value,
+      });
+      // setQ(event.target.value);
       openverseDataFetch(true);
       setOpenverseModal(true);
     }
   };
 
   const handleSearch = (event) => {
-    if (q.length != 0) {
+    if (searchQ.length != 0) {
       openverseDataFetch(true);
       setOpenverseModal(true);
     }
@@ -34,8 +39,12 @@ export default function Search(props) {
         id="search-form"
         class="openverse-search-input"
         placeholder={__("Search for content", "eb-openverse-block")}
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
+        value={searchQ}
+        onChange={(e) =>
+          setAttributes({
+            searchQ: e.target.value,
+          })
+        }
         onKeyPress={handleKeyPress}
       />
       {!loading && openverseDataCount > 0 && (

@@ -37,7 +37,10 @@ const attributes = {
   blockMeta: {
     type: "object",
   },
-
+  searchQ: {
+    type: "string",
+    default: "",
+  },
   apiKey: {
     type: "string",
   },
