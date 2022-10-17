@@ -210,6 +210,7 @@ export default function Edit(props) {
   // fetch pagination data
   useEffect(() => {
     if (pagination > 1) {
+      console.log("setloading true")
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
@@ -238,7 +239,8 @@ export default function Edit(props) {
             const passData = responseData.results;
             setTotalPages(responseData.page_count);
             setOpenverseData([...openverseData, ...passData]);
-            setLoading(false);
+            // setLoading(false);
+            
             setOpenverseError({
               status: false,
             });
@@ -383,6 +385,7 @@ export default function Edit(props) {
               trigger={openverseModal}
               setTrigger={setOpenverseModal}
               loading={loading}
+              setLoading={setLoading}
               openverseData={openverseData}
               q={q}
               setQ={setQ}

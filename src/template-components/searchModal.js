@@ -19,6 +19,7 @@ export default function SeachModal(props) {
   const {
     data,
     loading,
+    setLoading,
     openverseData,
     q,
     setQ,
@@ -228,7 +229,7 @@ export default function SeachModal(props) {
     setLoadmoreClick(true);
     if (pagination < totalPages) {
       setPagination((pagination) => pagination + 1);
-      setLimit((limit) => limit + 12);
+      // setLimit((limit) => limit + 12);
     } else {
       console.log("Load more not working");
     }
@@ -262,24 +263,22 @@ export default function SeachModal(props) {
                 {q}
               </p>
 
+              {console.log("loading: ", loading)}
               {loading && <Loading limit={limit} />}
+              {openverseError.status && (
+                <span className="openverse-error">
+                  <NoData></NoData>
+                </span>
+              )}
 
-              {!loading && (
-                <>
-                  {openverseError.status && (
-                    <span className="openverse-error">
-                      <NoData></NoData>
-                    </span>
-                  )}
-
-                  {!openverseError.status && (
-                    <Items
-                      data={openverseData}
-                      selectItem={selectItem}
-                      setSelectItem={setSelectItem}
-                    />
-                  )}
-                </>
+              {!openverseError.status && (
+                <Items
+                  data={openverseData}
+                  selectItem={selectItem}
+                  setSelectItem={setSelectItem}
+                  loading={loading}
+                  setLoading={setLoading}
+                />
               )}
 
               {totalPages > pagination && (

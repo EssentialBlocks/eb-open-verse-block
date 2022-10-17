@@ -634,8 +634,6 @@ function Edit(props) {
       body: data
     }) // wrapped
     .then(res => res.text()).then(data => {
-      // console.log("data", data);
-
       const response = JSON.parse(data);
       if (response.success && response.data) {
         if (response.data.client_id) {
@@ -678,7 +676,6 @@ function Edit(props) {
         const response = JSON.parse(data);
         if (response.success) {
           const responseData = JSON.parse(response.data);
-          console.log(responseData.result_count);
           if (responseData.result_count == 0) {
             setOpenverseError({
               status: true,
@@ -717,6 +714,7 @@ function Edit(props) {
   // fetch pagination data
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (pagination > 1) {
+      console.log("setloading true");
       setLoading(true);
       let data = new FormData();
       data.append("action", "eb_get_collections");
@@ -742,7 +740,8 @@ function Edit(props) {
           const passData = responseData.results;
           setTotalPages(responseData.page_count);
           setOpenverseData([...openverseData, ...passData]);
-          setLoading(false);
+          // setLoading(false);
+
           setOpenverseError({
             status: false
           });
@@ -814,6 +813,7 @@ function Edit(props) {
     trigger: openverseModal,
     setTrigger: setOpenverseModal,
     loading: loading,
+    setLoading: setLoading,
     openverseData: openverseData,
     q: q,
     setQ: setQ,
@@ -4615,14 +4615,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 
+
 function Items(props) {
   const {
     data,
     selectItem,
-    setSelectItem
+    setSelectItem,
+    loading,
+    setLoading
   } = props;
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, [loading]);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "eb-openverse-grid"
+    className: `eb-openverse-grid ${loading ? 'hide' : 'show'}`
   }, typeof data === "object" && data.map(item => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: `eb-openverse-grid-item ${selectItem == item ? "selected" : ""}`,
     onClick: () => setSelectItem(item)
@@ -4791,6 +4799,7 @@ function SeachModal(props) {
   const {
     data,
     loading,
+    setLoading,
     openverseData,
     q,
     setQ,
@@ -4998,7 +5007,7 @@ function SeachModal(props) {
     setLoadmoreClick(true);
     if (pagination < totalPages) {
       setPagination(pagination => pagination + 1);
-      setLimit(limit => limit + 12);
+      // setLimit((limit) => limit + 12);
     } else {
       console.log("Load more not working");
     }
@@ -5032,15 +5041,17 @@ function SeachModal(props) {
     className: "search-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "search-key"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search Key:", "eb-openverse-block"), " "), q), loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Search Key:", "eb-openverse-block"), " "), q), console.log("loading: ", loading), loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
     limit: limit
-  }), !loading && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, openverseError.status && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }), openverseError.status && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "openverse-error"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_noData__WEBPACK_IMPORTED_MODULE_6__["default"], null)), !openverseError.status && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_items__WEBPACK_IMPORTED_MODULE_2__["default"], {
     data: openverseData,
     selectItem: selectItem,
-    setSelectItem: setSelectItem
-  })), totalPages > pagination && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    setSelectItem: setSelectItem,
+    loading: loading,
+    setLoading: setLoading
+  }), totalPages > pagination && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "loadmore-btn",
     onClick: loadMore
   }, loading ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Loading ...", "eb-openverse-block") : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Load More", "eb-openverse-block"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -5365,7 +5376,7 @@ module.exports = window["wp"]["primitives"];
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"Essential Blocks\' Openverse Block","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
+module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"EB Block for Openverse","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
 
 /***/ })
 
