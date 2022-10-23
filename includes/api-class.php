@@ -1,6 +1,8 @@
 <?php
-
-defined('ABSPATH') || exit;
+/**
+ * Handles api functionality
+ **/
+defined( 'ABSPATH' ) || exit;
 
 class EB_Openverse_Blocks_Api {
 
@@ -8,11 +10,12 @@ class EB_Openverse_Blocks_Api {
 	 * Get data for specific endpoints
 	 *
 	 * @param string $url
-	 * @param array $params
-	 * @param string $key
+	 * @param array  $params
+	 * @param array $header
+	 * @param array $options
 	 * @return false|object
      */
-    public static function get( $url, $params = array(), $header=[], $options=[] ) {
+    public static function get( $url, $params = array(), $header = array(), $options = array() ) {
         if ( empty( $url ) ) {
             return false;
         }
@@ -31,9 +34,9 @@ class EB_Openverse_Blocks_Api {
 
     /**
      * @param string $url
-     * @param array $data
+     * @param array  $data
      * @param string $key
-     * @param array $headers
+     * @param array  $headers
      * @return array|bool|mixed|object|string
      */
     public static function post( $url, $data = array(), $key = '', $headers = array() ) {
@@ -48,10 +51,10 @@ class EB_Openverse_Blocks_Api {
      *
      * @param string $url
      * @param string $api_key
-     * @param array $options
+     * @param array  $options
      * @return object
      */
-    private static function remote_get( $url, $header = [], $options = [] ) {
+    private static function remote_get( $url, $header = array(), $options = array() ) {
 
         $options = array_merge(
             $header,
@@ -59,19 +62,18 @@ class EB_Openverse_Blocks_Api {
         );
 
         $response = wp_remote_get(
-            $url, $options
+            $url,
+            $options
         );
-        
-        if ( is_array( $response ) && isset($response['response']) ) {
-            if ($response['response']['code'] === 200) {
+
+        if ( is_array( $response ) && isset( $response['response'] ) ) {
+            if ( $response['response']['code'] === 200 ) {
                 return wp_send_json_success( $response['body'] );
+            } else {
+                wp_send_json_error( $response['body'] );
             }
-            else {
-                wp_send_json_error($response['body']);
-            }
-        }
-        else {
-            wp_send_json_error("Something went wrong!");
+        } else {
+            wp_send_json_error( 'Something went wrong!' );
         }
     }
 
@@ -84,7 +86,7 @@ class EB_Openverse_Blocks_Api {
      * @param array  $headers
      * @return array|mixed|object
      */
-    private static function remote_post( $url, $data, $apiKey = '', $headers = array()) {
+    private static function remote_post( $url, $data, $apiKey = '', $headers = array() ) {
         $request = array();
 
         if ( ! empty( $data ) ) {
@@ -111,10 +113,9 @@ class EB_Openverse_Blocks_Api {
     }
 
 
-    public static function makeRequestHeader($headers = array())
-    {
+    public static function makeRequestHeader( $headers = array() ) {
         return array(
-            'headers' => $headers
+            'headers' => $headers,
         );
     }
 }
