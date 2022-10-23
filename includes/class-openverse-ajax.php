@@ -1,7 +1,6 @@
 <?php
-
 /**
- * ebOPENVERSEAJAX
+ * EB_Openverse_Block_Ajax
  *
  * AJAX Event Handler
  *
@@ -34,9 +33,10 @@ class EB_Openverse_Block_Ajax {
          self::eb_ajax_action_init();
     }
 
-    private static function isset_check( $value, $default = '' ) {
-        if ( isset( $value ) ) {
-            return $value;
+    private static function isset_check($value, $default = '')
+    {
+        if (isset($_POST[$value])) {
+            return $_POST[$value];
         } else {
             return $default;
         }
@@ -65,8 +65,8 @@ class EB_Openverse_Block_Ajax {
             die( __( 'Nonce did not match', 'essential-blocks' ) );
 		}
 
-        $name  = self::isset_check( sanitize_text_field( $_POST['openverseName'] ) );
-        $email = self::isset_check( sanitize_email( $_POST['openverseEmail'] ) );
+        $name  = sanitize_text_field(self::isset_check('openverseName'));
+        $email = sanitize_email(self::isset_check('openverseEmail'));
 
         // Registration for client id and client secret
         $url = 'https://api.openverse.engineering/v1/auth_tokens/register/';
@@ -189,7 +189,7 @@ class EB_Openverse_Block_Ajax {
      * API Call to Get Data
      */
     public static function eb_get_openverse_collections() {
-		if ( ! wp_verify_nonce( $_POST['openverse_nonce'], 'eb-openverse-nonce' ) ) {
+        if ( isset( $_POST['openverse_nonce'] ) && ! wp_verify_nonce( sanitize_key( $_POST['openverse_nonce'] ), 'eb-openverse-nonce' ) ) {
             die( __( 'Nonce did not match', 'essential-blocks' ) );
 		}
 
@@ -206,34 +206,16 @@ class EB_Openverse_Block_Ajax {
         $url   = 'https://api.openverse.engineering/v1/images';
         $param = array();
 
-		$keys = [
-			'openverseQ' => 'q',
-			'openverseFilterLicenses' => 'license',
-			'openverseFilterImgtype' => 'categories',
-			'openverseFilterSize' => 'size',
-			'openverseFilterExtension' => 'extension',
-			'openverseFilterLicensesType' => 'license_type',
-			'openversePage' => 'page',
-		];
         $values = array(
 			'page_size'    => self::isset_check( $limit ),
-            /*'q'            => self::isset_check( sanitize_text_field( $_POST['openverseQ'] ) ),
-            'license'      => self::isset_check( sanitize_text_field( $_POST['openverseFilterLicenses'] ) ),
-            'categories'   => self::isset_check( sanitize_text_field( $_POST['openverseFilterImgtype'] ) ),
-            'size'         => self::isset_check( sanitize_text_field( $_POST['openverseFilterSize'] ) ),
-            'extension'    => self::isset_check( sanitize_text_field( $_POST['openverseFilterExtension'] ) ),
-            'license_type' => self::isset_check( sanitize_text_field( $_POST['openverseFilterLicensesType'] ) ),
-            'page'         => self::isset_check( sanitize_text_field( $_POST['openversePage'] ), 1 ),*/
+            'q'            => sanitize_text_field(self::isset_check('openverseQ')),
+            'license'      => sanitize_text_field(self::isset_check('openverseFilterLicenses')),
+            'categories'   => sanitize_text_field(self::isset_check('openverseFilterImgtype')),
+            'size'         => sanitize_text_field(self::isset_check('openverseFilterSize')),
+            'extension'    => sanitize_text_field(self::isset_check('openverseFilterExtension')),
+            'license_type' => sanitize_text_field(self::isset_check('openverseFilterLicensesType')),
+            'page'         => sanitize_text_field(self::isset_check('openversePage', 1 )),
         );
-
-		foreach (array_keys($keys) as $key){
-			if(isset($_POST[$key])){
-				$values[$keys[$key]] = sanitize_text_field($_POST[$key]);
-			}
-		}
-		if(!isset($values['page'])){
-			$values['page'] = 1;
-		}
 
         $param  = array_merge( $param, $values );
 
