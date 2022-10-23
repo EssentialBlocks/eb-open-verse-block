@@ -634,8 +634,6 @@ function Edit(props) {
       body: data
     }) // wrapped
     .then(res => res.text()).then(data => {
-      // console.log("data", data);
-
       const response = JSON.parse(data);
       if (response.success && response.data) {
         if (response.data.client_id) {
@@ -678,7 +676,6 @@ function Edit(props) {
         const response = JSON.parse(data);
         if (response.success) {
           const responseData = JSON.parse(response.data);
-          console.log(responseData.result_count);
           if (responseData.result_count == 0) {
             setOpenverseError({
               status: true,
@@ -5365,7 +5362,7 @@ module.exports = window["wp"]["primitives"];
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"Essential Blocks\' Openverse Block","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
+module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"EB Block for Openverse","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
 
 /***/ })
 
