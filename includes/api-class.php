@@ -11,8 +11,8 @@ class EB_Openverse_Blocks_Api {
 	 *
 	 * @param string $url
 	 * @param array  $params
-	 * @param array $header
-	 * @param array $options
+	 * @param array  $header
+	 * @param array  $options
 	 * @return false|object
      */
     public static function get( $url, $params = array(), $header = array(), $options = array() ) {
