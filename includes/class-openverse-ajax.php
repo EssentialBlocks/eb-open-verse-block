@@ -70,8 +70,8 @@ class EB_Openverse_Block_Ajax
             die(__('Nonce did not match', 'essential-blocks'));
         }
 
-        $name = self::isset_check($_POST['openverseName']);
-        $email = self::isset_check($_POST['openverseEmail']);
+        $name = self::isset_check(sanitize_text_field($_POST['openverseName']));
+        $email = self::isset_check(sanitize_email($_POST['openverseEmail']));
 
         // Registration for client id and client secret
         $url = "https://api.openverse.engineering/v1/auth_tokens/register/";
@@ -207,14 +207,14 @@ class EB_Openverse_Block_Ajax
         $param = array();
 
         $values = array(
-            'q' => self::isset_check($_POST['openverseQ']),
-            'license' => self::isset_check($_POST['openverseFilterLicenses']),
-            'categories' => self::isset_check($_POST['openverseFilterImgtype']),
-            'size' => self::isset_check($_POST['openverseFilterSize']),
-            'extension' => self::isset_check($_POST['openverseFilterExtension']),
-            'license_type' => self::isset_check($_POST['openverseFilterLicensesType']),
+            'q' => self::isset_check(sanitize_text_field($_POST['openverseQ'])),
+            'license' => self::isset_check(sanitize_text_field($_POST['openverseFilterLicenses'])),
+            'categories' => self::isset_check(sanitize_text_field($_POST['openverseFilterImgtype'])),
+            'size' => self::isset_check(sanitize_text_field($_POST['openverseFilterSize'])),
+            'extension' => self::isset_check(sanitize_text_field($_POST['openverseFilterExtension'])),
+            'license_type' => self::isset_check(sanitize_text_field($_POST['openverseFilterLicensesType'])),
             'page_size' => self::isset_check($limit),
-            'page' => self::isset_check($_POST['openversePage'], 1),
+            'page' => self::isset_check(sanitize_text_field($_POST['openversePage']), 1),
         );
         $param = array_merge($param, $values);
 
@@ -241,7 +241,7 @@ class EB_Openverse_Block_Ajax
         }
 
         if (isset($_POST['image_url'])) {
-            $file = $_POST['image_url'];
+            $file = sanitize_url($_POST['image_url']);
         }
 
         $filename = basename($file);
@@ -266,9 +266,9 @@ class EB_Openverse_Block_Ajax
 
         }*/
         try{
-            echo wp_get_attachment_url(self::do_upload($file, $filename));
+            echo esc_url(wp_get_attachment_url(self::do_upload($file, $filename)));
         }catch (\Exception $e){
-            echo 'Upload failed, details: ' . $e->getMessage();
+            echo esc_html('Upload failed, details: ' . $e->getMessage());
         }
 
         wp_die();
