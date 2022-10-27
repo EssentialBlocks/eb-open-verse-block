@@ -261,10 +261,27 @@ class EB_Openverse_Block_Ajax {
      * Upload to media
      */
     private static function do_upload( $url, $title = null ) {
-        require_once ABSPATH . '/wp-load.php';
-        require_once ABSPATH . '/wp-admin/includes/image.php';
-        require_once ABSPATH . '/wp-admin/includes/file.php';
-        require_once ABSPATH . '/wp-admin/includes/media.php';
+
+        // if (file_exists( ABSPATH . '/wp-load.php' )){  
+        //     require_once ABSPATH . '/wp-load.php';
+        // }
+
+        if (!function_exists('wp_crop_image')){  
+            require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+        }
+        
+        if (!function_exists('get_file_description')){
+            require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+        }
+        
+        if (!function_exists('media_upload_tabs')){
+            require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+        }
+
+
+        // require_once ABSPATH . '/wp-admin/includes/image.php';
+        // require_once ABSPATH . '/wp-admin/includes/file.php';
+        // require_once ABSPATH . '/wp-admin/includes/media.php';
 
         // Download url to a temp file
         $tmp = download_url( $url );
