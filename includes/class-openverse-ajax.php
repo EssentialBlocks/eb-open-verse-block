@@ -33,10 +33,9 @@ class EB_Openverse_Block_Ajax {
          self::eb_ajax_action_init();
     }
 
-    private static function isset_check($value, $default = '')
-    {
-        if (isset($_POST[$value])) {
-            return $_POST[$value];
+    private static function isset_check( $value, $default = '' ) {
+        if ( isset( $_POST[ $value ] ) ) {
+            return $_POST[ $value ];
         } else {
             return $default;
         }
@@ -62,11 +61,11 @@ class EB_Openverse_Block_Ajax {
      */
     public static function eb_get_openverse_registration() {
 		if ( isset( $_POST['openverse_reg_nonce'] ) && ! wp_verify_nonce( sanitize_key( $_POST['openverse_reg_nonce'] ), 'eb-openverse-reg-nonce' ) ) {
-            die( __( 'Nonce did not match', 'essential-blocks' ) );
+            die( esc_html__( 'Nonce did not match', 'essential-blocks' ) );
 		}
 
-        $name  = sanitize_text_field(self::isset_check('openverseName'));
-        $email = sanitize_email(self::isset_check('openverseEmail'));
+        $name  = sanitize_text_field( self::isset_check( 'openverseName' ) );
+        $email = sanitize_email( self::isset_check( 'openverseEmail' ) );
 
         // Registration for client id and client secret
         $url = 'https://api.openverse.engineering/v1/auth_tokens/register/';
@@ -190,7 +189,7 @@ class EB_Openverse_Block_Ajax {
      */
     public static function eb_get_openverse_collections() {
         if ( isset( $_POST['openverse_nonce'] ) && ! wp_verify_nonce( sanitize_key( $_POST['openverse_nonce'] ), 'eb-openverse-nonce' ) ) {
-            die( __( 'Nonce did not match', 'essential-blocks' ) );
+            die( esc_html__( 'Nonce did not match', 'essential-blocks' ) );
 		}
 
         // Fetching the token and check the expire time
@@ -208,16 +207,16 @@ class EB_Openverse_Block_Ajax {
 
         $values = array(
 			'page_size'    => self::isset_check( $limit ),
-            'q'            => sanitize_text_field(self::isset_check('openverseQ')),
-            'license'      => sanitize_text_field(self::isset_check('openverseFilterLicenses')),
-            'categories'   => sanitize_text_field(self::isset_check('openverseFilterImgtype')),
-            'size'         => sanitize_text_field(self::isset_check('openverseFilterSize')),
-            'extension'    => sanitize_text_field(self::isset_check('openverseFilterExtension')),
-            'license_type' => sanitize_text_field(self::isset_check('openverseFilterLicensesType')),
-            'page'         => sanitize_text_field(self::isset_check('openversePage', 1 )),
+            'q'            => sanitize_text_field( self::isset_check( 'openverseQ' ) ),
+            'license'      => sanitize_text_field( self::isset_check( 'openverseFilterLicenses' ) ),
+            'categories'   => sanitize_text_field( self::isset_check( 'openverseFilterImgtype' ) ),
+            'size'         => sanitize_text_field( self::isset_check( 'openverseFilterSize' ) ),
+            'extension'    => sanitize_text_field( self::isset_check( 'openverseFilterExtension' ) ),
+            'license_type' => sanitize_text_field( self::isset_check( 'openverseFilterLicensesType' ) ),
+            'page'         => sanitize_text_field( self::isset_check( 'openversePage', 1 ) ),
         );
 
-        $param  = array_merge( $param, $values );
+        $param = array_merge( $param, $values );
 
         $response = EB_Openverse_Blocks_Api::get(
             $url,
@@ -239,12 +238,12 @@ class EB_Openverse_Block_Ajax {
      * Upload selected item to media
      */
     public static function eb_get_openverse_item() {
-        if ( isset($_POST['openverse_item_nonce']) && ! wp_verify_nonce( sanitize_key($_POST['openverse_item_nonce']), 'eb-openverse-item-nonce' ) ) {
-            die( __( 'Nonce did not match', 'essential-blocks' ) );
+        if ( isset( $_POST['openverse_item_nonce'] ) && ! wp_verify_nonce( sanitize_key( $_POST['openverse_item_nonce'] ), 'eb-openverse-item-nonce' ) ) {
+            die( esc_html__( 'Nonce did not match', 'essential-blocks' ) );
         }
 
         if ( isset( $_POST['image_url'] ) ) {
-            $file = esc_url_raw($_POST['image_url']);
+            $file = esc_url_raw( $_POST['image_url'] );
         }
 
         $filename = basename( $file );
