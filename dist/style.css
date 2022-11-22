@@ -55,7 +55,7 @@
   line-height: 1;
 }
 .eb-openverse-wrapper .image-attribution a {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
 }
 .eb-openverse-wrapper .image-attribution .licensed-wrap {
