@@ -6,6 +6,7 @@ import save from "./save";
 import { OpenverseIcon } from "./icon";
 import attributes from "./attributes";
 import Example from "./example";
+import deprecated from "./deprecated";
 import metadata from "../block.json";
 const { ebConditionalRegisterBlockType } = EBOpenverseControls;
 
@@ -24,4 +25,5 @@ ebConditionalRegisterBlockType(metadata, {
   edit: Edit,
   save,
   example: Example,
+  deprecated,
 });

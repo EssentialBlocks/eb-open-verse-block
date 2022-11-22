@@ -4,9 +4,6 @@ import { useBlockProps } from "@wordpress/block-editor";
 const save = ({ attributes }) => {
   const {
     blockId,
-    horizontalAlign,
-    verticalAlign,
-    verticalAlignCap2,
     stylePreset,
     displayAttribution,
     attributionStyle,
