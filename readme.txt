@@ -1,4 +1,4 @@
-=== EB Block for Openverse ===
+=== EB Openverse Block ===
 Contributors: wpdevteam, re_enter_rupok, Asif2BD, rahat89, sumaiyasiddika
 Tags: Free images, openverse, stock photos, image block, images, photos, Gutenberg image block, WordPress images, EB Open Verse
 Requires at least: 5.6
@@ -12,7 +12,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 
 == Description ==
 
-**EB Block for Openverse** helps you to add all amazing free stock photos, royalty free images, CC licensed images to your WordPress website in 1-click. Also, display images with attributes in an interactive manner using ready presets.
+**EB Openverse Block** helps you to add all amazing free stock photos, royalty free images, CC licensed images to your WordPress website in 1-click. Also, display images with attributes in an interactive manner using ready presets.
 
 **STUNNING FEATURES:**
 
@@ -23,7 +23,7 @@ Easily search & use royalty free images, stock photos, CC-licensed images from O
 - Automatically add image attributes (original image author, image name, etc.) as image caption
 
 
-**Completely Customizable:** You can customize EB Block for Openverse just the way you want.
+**Completely Customizable:** You can customize EB Openverse Block just the way you want.
 
 **Super Light-weight:** No extra resources are used and it’s highly optimized for super fast loading & instant live editing.
 
@@ -47,7 +47,7 @@ This Block is brought to you by [WPDeveloper](https://wpdeveloper.net), the team
 
 🤝 Join our [Facebook Community](https://www.facebook.com/groups/wpdeveloper.net/) & get connected with expert web creators like yourself.
 
-🧡 LOVED EB Block for Openverse? Rate us on WordPress Repository
+🧡 LOVED EB Openverse Block? Rate us on WordPress Repository
 
 🔥 GET FREEBIES FOR YOUR WORDPRESS SITE
 
@@ -73,7 +73,7 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 = Modern Way: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For "EB Block for Openverse".
+2. Search For "EB Openverse Block".
 3. Install in 1-click
 
 = Old Way: =

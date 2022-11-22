@@ -5566,7 +5566,7 @@ module.exports = window["wp"]["primitives"];
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"EB Block for Openverse","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
+module.exports = JSON.parse('{"apiVersion":"2","name":"eb-openverse-block/eb-openverse-block","title":"EB Openverse Block","category":"widgets","description":"Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website","textdomain":"eb-openverse-block","editorScript":"file:./dist/index.js"}');
 
 /***/ })
 
