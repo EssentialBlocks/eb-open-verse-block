@@ -113,6 +113,17 @@
   font-size: 13px;
   line-height: 1.3;
   font-weight: 400;
+  top: -2px;
+  position: relative;
+}
+.filter-item-inner .form-check-label svg {
+  width: 14px;
+  margin-right: 3px;
+  top: 2px;
+  position: relative;
+}
+.filter-item-inner .form-check-label svg:last-child {
+  margin-right: 6px;
 }
 .filter-item-inner .form-check-input {
   position: relative;
@@ -164,7 +175,7 @@
   position: absolute;
   right: 126px;
   font-size: 12px;
-  top: 27px;
+  top: 29px;
   color: #797979;
 }
 

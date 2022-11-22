@@ -4,7 +4,7 @@ Tags: Free images, openverse, stock photos, image block, images, photos, Gutenbe
 Requires at least: 5.6
 Requires php: 5.6
 Tested up to: 6.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

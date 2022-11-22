@@ -347,9 +347,7 @@ function Inspector(props) {
 
               {tab.name === "styles" && (
                 <>
-                  <PanelBody
-                    title={__("Image Settings", "eb-openverse-block")}
-                  >
+                  <PanelBody title={__("Image Settings", "eb-openverse-block")}>
                     {!complexStyle && (
                       <>
                         <BaseControl>

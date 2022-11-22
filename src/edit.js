@@ -44,6 +44,7 @@ export default function Edit(props) {
     classHook,
     imageurl,
     apiInfo,
+    searchQ,
   } = attributes;
 
   const [loadingApi, setLoadingApi] = useState(false);
@@ -65,7 +66,7 @@ export default function Edit(props) {
   const [totalPages, setTotalPages] = useState(1);
 
   // search
-  const [q, setQ] = useState("");
+  // const [q, setQ] = useState("");
   const [filterData, setFilterData] = useState({
     licenseType: [],
     licenses: [],
@@ -146,7 +147,7 @@ export default function Edit(props) {
       data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
-      data.append("openverseQ", q);
+      data.append("openverseQ", searchQ);
       data.append("openverseFilterLicensesType", filterData.licenseType);
       data.append("openverseFilterLicenses", filterData.licenses);
       data.append("openverseFilterImgtype", filterData.category);
@@ -202,7 +203,7 @@ export default function Edit(props) {
 
   // fetch
   useEffect(() => {
-    if (!isEmpty(q)) {
+    if (!isEmpty(searchQ)) {
       openverseDataFetch(true);
     }
   }, [filterData]);
@@ -216,7 +217,7 @@ export default function Edit(props) {
       data.append("openverse_nonce", EBOpenVerseLocalize.openverse_nonce);
 
       // search
-      data.append("openverseQ", q);
+      data.append("openverseQ", searchQ);
       data.append("openverseFilterLicensesType", filterData.licenseType);
       data.append("openverseFilterLicenses", filterData.licenses);
       data.append("openverseFilterImgtype", filterData.category);
@@ -360,8 +361,8 @@ export default function Edit(props) {
                         <Search
                           setOpenverseModal={setOpenverseModal}
                           openverseDataFetch={openverseDataFetch}
-                          q={q}
-                          setQ={setQ}
+                          searchQ={searchQ}
+                          setAttributes={setAttributes}
                           componentClassName="openverse-search-section"
                         ></Search>
                         <p className="openverse-placheholderbox__note">
@@ -384,8 +385,8 @@ export default function Edit(props) {
               setTrigger={setOpenverseModal}
               loading={loading}
               openverseData={openverseData}
-              q={q}
-              setQ={setQ}
+              // q={q}
+              // setQ={setQ}
               filterData={filterData}
               setFilterData={setFilterData}
               setOpenverseImage={setOpenverseImage}
