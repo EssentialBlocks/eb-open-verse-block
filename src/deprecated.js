@@ -1,3 +1,6 @@
+import { __ } from "@wordpress/i18n";
+import { useBlockProps } from "@wordpress/block-editor";
+
 /**
  * Internal dependencies
  */
@@ -11,6 +14,9 @@ const deprecated = [
     save: ({ attributes }) => {
       const {
         blockId,
+        horizontalAlign,
+        verticalAlign,
+        verticalAlignCap2,
         stylePreset,
         displayAttribution,
         attributionStyle,
@@ -69,11 +75,13 @@ const deprecated = [
                         </span>
                       )}
                       {/* // licensed */}
-                      {imageAttr.license && (
+                      {imageAttr.creator && (
                         <span>
+                          {__(" By ", "eb-openverse-block")}
+
                           {imageAttr.licenseUrl && (
                             <>
-                              {__(" Is licensed under ", "eb-openverse-block")}
+                              {__(" is licensed under ", "eb-openverse-block")}
                               <a
                                 target="_blank"
                                 rel="noopener noreferrer"
