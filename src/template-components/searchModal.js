@@ -36,6 +36,8 @@ export default function SeachModal(props) {
     openverseDataCount,
   } = props;
 
+  const { searchQ } = attributes;
+
   const handleChange = (e) => {
     // Destructuring
     const { value, checked, name } = e.target;
@@ -251,15 +253,15 @@ export default function SeachModal(props) {
             openverseDataFetch={openverseDataFetch}
             openverseDataCount={openverseDataCount}
             loading={loading}
-            q={q}
-            setQ={setQ}
+            searchQ={searchQ}
+            setAttributes={setAttributes}
             componentClassName="search-section openverse-search-section"
           ></Search>
           <div className="search-result-section">
             <div className="search-content">
               <p className="search-key">
                 <span>{__("Search Key:", "eb-openverse-block")} </span>
-                {q}
+                {searchQ}
               </p>
 
               {loading && <Loading limit={limit} />}
@@ -298,7 +300,7 @@ export default function SeachModal(props) {
               <form className="filters-form">
                 <div className="filter-item">
                   <h5>{__("LICENSES", "eb-openverse-block")}</h5>
-                  {FILTER_LICENSES.map(({ label, value }, index) => {
+                  {FILTER_LICENSES.map(({ icon, label, value }, index) => {
                     return (
                       <div className="filter-item-inner" key={index}>
                         <input
@@ -313,6 +315,7 @@ export default function SeachModal(props) {
                           className="form-check-label"
                           htmlFor={`licenses-${index}`}
                         >
+                          {icon.map((item) => item)}
                           {label}
                         </label>
                       </div>

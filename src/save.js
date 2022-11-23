@@ -4,9 +4,6 @@ import { useBlockProps } from "@wordpress/block-editor";
 const save = ({ attributes }) => {
   const {
     blockId,
-    horizontalAlign,
-    verticalAlign,
-    verticalAlignCap2,
     stylePreset,
     displayAttribution,
     attributionStyle,
@@ -63,13 +60,11 @@ const save = ({ attributes }) => {
                     </span>
                   )}
                   {/* // licensed */}
-                  {imageAttr.creator && (
+                  {imageAttr.license && (
                     <span>
-                      {__(" By ", "eb-openverse-block")}
-
                       {imageAttr.licenseUrl && (
                         <>
-                          {__(" is licensed under ", "eb-openverse-block")}
+                          {__(" Is licensed under ", "eb-openverse-block")}
                           <a
                             target="_blank"
                             rel="noopener noreferrer"

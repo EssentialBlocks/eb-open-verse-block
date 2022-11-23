@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:     EB Block for Openverse
+ * Plugin Name:     EB Openverse Block
  * Description:     Easily search & use royalty free images, stock photos, CC-licensed images, etc from Openverse for your website.
- * Version:         1.0.0
+ * Version:         1.0.1
  * Author:          WPDeveloper
  * Author URI:      https://wpdeveloper.net
  * License:         GPL-3.0-or-later
@@ -22,7 +22,7 @@
 require_once __DIR__ . '/includes/font-loader.php';
 require_once __DIR__ . '/includes/post-meta.php';
 require_once __DIR__ . '/includes/helpers.php';
-require_once __DIR__ . '/lib/style-handler-inline/style-handler-inline.php';
+require_once __DIR__ . '/lib/style-handler/style-handler.php';
 require_once __DIR__ . '/includes/api-class.php';
 require_once __DIR__ . '/includes/class-openverse-ajax.php';
 /**
@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/class-openverse-ajax.php';
  * @return void
  */
 function create_block_eb_openverse_block_init() {
-	define( 'EB_OPENVERSE_BLOCK_VERSION', '1.0.0' );
+	define( 'EB_OPENVERSE_BLOCK_VERSION', '1.0.1' );
 	define( 'EB_OPENVERSE_BLOCK_ADMIN_URL', plugin_dir_url( __FILE__ ) );
 	define( 'EB_OPENVERSE_BLOCK_ADMIN_PATH', dirname( __FILE__ ) );
 
