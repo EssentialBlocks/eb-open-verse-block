@@ -90,5 +90,9 @@ Yes, it will work with any standard WordPress theme.
 
 == Changelog ==
 
+= 1.0.1 - 23/11/2022 =
+* Style handler update
+* Few minor improvements
+
 = 1.0.0 - 04/10/2022 =
 * Initial Release
