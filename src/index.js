@@ -6,24 +6,27 @@ import save from "./save";
 import { OpenverseIcon } from "./icon";
 import attributes from "./attributes";
 import Example from "./example";
-import deprecated from "./deprecated";
 import metadata from "../block.json";
 const { ebConditionalRegisterBlockType } = EBOpenverseControls;
 
 const { name, category } = metadata;
 
 ebConditionalRegisterBlockType(metadata, {
-  keywords: [
-    __("Openverse", "eb-openverse-block"),
-    __("Openverse block", "eb-openverse-block"),
-    __("Openverse image", "eb-openverse-block"),
-    __("EB Openverse block", "eb-openverse-block"),
-    __("eb openverse block", "eb-openverse-block"),
-  ],
-  icon: OpenverseIcon,
-  attributes,
-  edit: Edit,
-  save,
-  example: Example,
-  deprecated,
+    keywords: [
+        __("Openverse", "essential-blocks"),
+        __("Openverse block", "essential-blocks"),
+        __("Openverse image", "essential-blocks"),
+        __("EB Openverse block", "essential-blocks"),
+        __("eb openverse block", "essential-blocks"),
+        __("essential blocks", "essential-blocks"),
+    ],
+    icon: OpenverseIcon,
+    attributes,
+    edit: Edit,
+    save,
+    example: {
+        attributes: {
+            cover: `${EBOpenVerseLocalize?.image_url}/block-preview/openverse.jpeg`,
+        },
+    },
 });

@@ -4,6 +4,5 @@
 	"title": "EB Openverse Block",
 	"category": "widgets",
 	"description": "Easily search & use royalty free images, stock photos, CC-licensed images from Openverse for your website",
-	"textdomain": "eb-openverse-block",
-	"editorScript": "file:./dist/index.js"
+	"textdomain": "eb-openverse-block"
 }
