@@ -3,8 +3,8 @@ Contributors: wpdevteam, re_enter_rupok, Asif2BD, rahat89, sumaiyasiddika
 Tags: Free images, openverse, stock photos, image block, images, photos, Gutenberg image block, WordPress images, EB Open Verse
 Requires at least: 5.6
 Requires php: 5.6
-Tested up to: 6.0
-Stable tag: 1.0.1
+Tested up to: 6.5
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,6 +89,10 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 Yes, it will work with any standard WordPress theme.
 
 == Changelog ==
+
+= 1.0.2 - 23/04/2024 =
+* Fixed: compatibility support with WordPress 6.5 version
+* Improved: controls
 
 = 1.0.1 - 23/11/2022 =
 * Style handler update
