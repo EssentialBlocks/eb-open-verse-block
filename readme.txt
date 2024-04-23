@@ -90,7 +90,7 @@ Yes, it will work with any standard WordPress theme.
 
 == Changelog ==
 
-= 1.0.2 - 21/04/2024 =
+= 1.0.2 - 23/04/2024 =
 * Fixed: compatibility support with WordPress 6.5 version
 * Improved: controls
 
