@@ -68,7 +68,7 @@ class EB_Openverse_Block_Ajax {
         $email = sanitize_email( self::isset_check( 'openverseEmail' ) );
 
         // Registration for client id and client secret
-        $url = 'https://api.openverse.engineering/v1/auth_tokens/register/';
+        $url = 'https://api.openverse.org/v1/auth_tokens/register/';
 
         $response = EB_Openverse_Blocks_Api::post(
             $url,
@@ -145,7 +145,7 @@ class EB_Openverse_Block_Ajax {
 		$client_secret = $settings['openverseApi']['client_secret'];
 
         // Registration for client id and client secret
-        $url = 'https://api.openverse.engineering/v1/auth_tokens/token/';
+        $url = 'https://api.openverse.org/v1/auth_tokens/token/';
 
         $response = EB_Openverse_Blocks_Api::post(
             $url,
@@ -202,7 +202,7 @@ class EB_Openverse_Block_Ajax {
 
         $limit = 12;
 
-        $url   = 'https://api.openverse.engineering/v1/images';
+        $url   = 'https://api.openverse.org/v1/images';
         $param = array();
 
         $values = array(
