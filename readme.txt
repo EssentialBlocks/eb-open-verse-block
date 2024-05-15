@@ -4,7 +4,7 @@ Tags: Free images, openverse, stock photos, image block, images, photos, Gutenbe
 Requires at least: 5.6
 Requires php: 5.6
 Tested up to: 6.5
-Stable tag: 1.0.2
+Stable tag: 1.2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,6 +89,10 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 Yes, it will work with any standard WordPress theme.
 
 == Changelog ==
+
+= 1.2.0 - 15/06/2024 =
+* Updated: Openverse API
+* Improved: controls
 
 = 1.0.2 - 23/04/2024 =
 * Fixed: compatibility support with WordPress 6.5 version
